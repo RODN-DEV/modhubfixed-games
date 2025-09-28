@@ -40,7 +40,7 @@ const gameData = {
             prediction: "Home /Away",
             odds: "1.34",
             status: "pending"
-        }
+        },
         {
             league: "Slovakia - 2. Liga",
             time: "Today 12:30",
