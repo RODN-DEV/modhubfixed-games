@@ -7,7 +7,7 @@ const gameData = {
             teams: "MSK Zilina B vs Tatran Liptovsky M.",
             prediction: "Both teams to score",
             odds: "1.76",
-            status: "pending"
+            status: "lost"
         },
         {
             league: "Austria - Regionalliga", 
@@ -15,7 +15,7 @@ const gameData = {
             teams: "Kapfenberg vs First Vienna FC",
             prediction: "Over 2.5 goals",
             odds: "2.35",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Poland - 1. Liga",
@@ -23,7 +23,7 @@ const gameData = {
             teams: "Miedz Legnica vs Znicz Pruszków",
             prediction: "Home Win",
             odds: "1.63",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Italy - Serie C",
@@ -31,7 +31,7 @@ const gameData = {
             teams: "Potenza vs Atalanta U23",
             prediction: "Both teams to score",
             odds: "2.24",
-            status: "pending"
+            status: "won"
         }
     ],
     'high-odds': [
@@ -42,7 +42,7 @@ const gameData = {
             teams: "Kataller Toyama vs Tokushima Vortis", 
             prediction: "Away Win",
             odds: "1.97",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Korea - K League 1",
@@ -50,7 +50,7 @@ const gameData = {
             teams: "FC Anyang vs Gwangju FC",
             prediction: "Home Win ", 
             odds: "2.33",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Japan - J1 League", 
@@ -58,7 +58,7 @@ const gameData = {
             teams: "Yokohama FC vs Shonan Bellmare",
             prediction: "Home Win or Draw",
             odds: "1.25",
-            status: "pending"
+            status: "won"
         },
         // WON/LOST GAMES AFTER 
         {
