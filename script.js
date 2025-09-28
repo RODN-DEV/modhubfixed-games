@@ -17,6 +17,7 @@ class ModHubOdds {
         this.loadFreePredictions();
         this.setCurrentYear();
         this.setupPreloader();
+        console.log('ModHub Odds initialized successfully!');
     }
 
     setupEventListeners() {
@@ -45,27 +46,40 @@ class ModHubOdds {
                 }
             });
         });
+
+        // Support page buttons
+        document.querySelectorAll('.vip-purchase-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                this.switchTab('vip');
+            });
+        });
+
+        console.log('Event listeners setup complete!');
     }
 
     setupPreloader() {
-        // Auto hide after 4 seconds
+        // Auto hide after 3 seconds
         setTimeout(() => {
             this.hidePreloader();
-        }, 4000);
+        }, 3000);
     }
 
     hidePreloader() {
         const preloader = document.getElementById('preloader');
         const mainApp = document.getElementById('main-app');
         
-        preloader.style.opacity = '0';
-        setTimeout(() => {
-            preloader.style.display = 'none';
-            mainApp.style.opacity = '1';
-        }, 500);
+        if (preloader && mainApp) {
+            preloader.style.opacity = '0';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+                mainApp.style.opacity = '1';
+            }, 500);
+        }
     }
 
     switchTab(tabName) {
+        console.log('Switching to tab:', tabName);
+        
         // Update navigation
         document.querySelectorAll('.nav-item').forEach(item => {
             item.classList.toggle('active', item.dataset.tab === tabName);
@@ -81,6 +95,7 @@ class ModHubOdds {
     }
 
     unlockVipTier(tier) {
+        console.log('Attempting to unlock tier:', tier);
         const tierCard = document.getElementById(`${tier}-tier`);
         const input = tierCard.querySelector('.password-input');
         const password = input.value.trim();
@@ -98,15 +113,20 @@ class ModHubOdds {
     }
 
     showTierPredictions(tier) {
+        console.log('Loading predictions for tier:', tier);
         const predictions = this.getTierPredictions(tier);
         const container = document.getElementById(`${tier}-predictions`);
         
         if (container) {
             this.renderPredictions(container, predictions, true);
+            console.log(`Loaded ${predictions.length} predictions for ${tier}`);
+        } else {
+            console.error('Container not found for tier:', tier);
         }
     }
 
     loadFreePredictions() {
+        console.log('Loading free predictions...');
         const predictions = [
             {
                 league: "Slovakia - 2. Liga",
@@ -143,9 +163,12 @@ class ModHubOdds {
         ];
 
         this.renderPredictions('free-predictions', predictions);
+        console.log('Free predictions loaded successfully!');
     }
 
     getTierPredictions(tier) {
+        console.log('Getting predictions for tier:', tier);
+        
         const predictions = {
             'high-odds': [
                 {
@@ -170,6 +193,14 @@ class ModHubOdds {
                     teams: "Yokohama FC vs Shonan Bellmare",
                     prediction: "Home Win or Draw",
                     odds: "1.25",
+                    status: "pending"
+                },
+                {
+                    league: "Premier League",
+                    time: "Today 12:00",
+                    teams: "Taichung Futuro vs Taipower",
+                    prediction: "Home Win or Away Win",
+                    odds: "1.27",
                     status: "pending"
                 }
             ],
@@ -197,6 +228,14 @@ class ModHubOdds {
                     prediction: "Home Win", 
                     odds: "1.40",
                     status: "pending"
+                },
+                {
+                    league: "Greece - Super League",
+                    time: "Today 19:30",
+                    teams: "Panetolikos vs Panathinaikos",
+                    prediction: "Away Win",
+                    odds: "1.45",
+                    status: "pending"
                 }
             ],
             'btts': [
@@ -222,6 +261,14 @@ class ModHubOdds {
                     teams: "Freiburg vs Hoffenheim",
                     prediction: "Both Teams to Score",
                     odds: "1.65", 
+                    status: "pending"
+                },
+                {
+                    league: "Czech Republic - 1. Liga",
+                    time: "Today 16:00",
+                    teams: "Jablonec vs Mladá Boleslav",
+                    prediction: "Both Teams to Score",
+                    odds: "1.70",
                     status: "pending"
                 }
             ],
@@ -249,6 +296,14 @@ class ModHubOdds {
                     prediction: "Home Win", 
                     odds: "1.95",
                     status: "pending"
+                },
+                {
+                    league: "Multiple Leagues",
+                    time: "Today Various",
+                    teams: "POTENTER FIVE Accumulator",
+                    prediction: "5-Fold Special",
+                    odds: "15.50",
+                    status: "pending"
                 }
             ]
         };
@@ -257,8 +312,18 @@ class ModHubOdds {
     }
 
     renderPredictions(containerId, predictions, isVip = false) {
+        console.log(`Rendering ${predictions.length} predictions in:`, containerId);
         const container = document.getElementById(containerId);
-        if (!container) return;
+        
+        if (!container) {
+            console.error('Container not found:', containerId);
+            return;
+        }
+
+        if (predictions.length === 0) {
+            container.innerHTML = '<div class="no-predictions">No predictions available at the moment.</div>';
+            return;
+        }
 
         const predictionsHTML = predictions.map(pred => `
             <div class="prediction-card">
@@ -278,6 +343,7 @@ class ModHubOdds {
         `).join('');
 
         container.innerHTML = predictionsHTML;
+        console.log(`Successfully rendered ${predictions.length} predictions`);
     }
 
     showNotification(message, type) {
@@ -293,7 +359,7 @@ class ModHubOdds {
             </button>
         `;
 
-        // Add notification styles
+        // Add notification styles if not already added
         if (!document.querySelector('#notification-styles')) {
             const styles = document.createElement('style');
             styles.id = 'notification-styles';
@@ -361,32 +427,45 @@ class ModHubOdds {
     }
 
     setCurrentYear() {
-        document.querySelector('.footer-bottom p').innerHTML = 
-            document.querySelector('.footer-bottom p').innerHTML.replace('2024', new Date().getFullYear());
+        const yearElements = document.querySelectorAll('.footer-bottom p');
+        yearElements.forEach(element => {
+            element.innerHTML = element.innerHTML.replace('2024', new Date().getFullYear());
+        });
     }
 }
 
 // Global functions
 function skipPreloader() {
-    window.modHubOdds.hidePreloader();
+    if (window.modHubOdds) {
+        window.modHubOdds.hidePreloader();
+    }
 }
 
 function unlockVipTier(tier) {
-    window.modHubOdds.unlockVipTier(tier);
+    if (window.modHubOdds) {
+        window.modHubOdds.unlockVipTier(tier);
+    }
 }
 
 function switchTab(tab) {
-    window.modHubOdds.switchTab(tab);
+    if (window.modHubOdds) {
+        window.modHubOdds.switchTab(tab);
+    }
 }
 
-// Initialize
-document.addEventListener('DOMContentLoaded', () => {
-    window.modHubOdds = new ModHubOdds();
-});
-
-// Add animations
-const animations = document.createElement('style');
-animations.textContent = `
+// Add missing CSS for no-predictions message
+const additionalStyles = document.createElement('style');
+additionalStyles.textContent = `
+    .no-predictions {
+        text-align: center;
+        padding: var(--space-xl);
+        color: var(--text-secondary);
+        font-style: italic;
+        background: var(--bg-card);
+        border-radius: var(--radius);
+        border: 2px dashed var(--border);
+    }
+    
     @keyframes shake {
         0%, 100% { transform: translateX(0); }
         25% { transform: translateX(-5px); }
@@ -398,4 +477,37 @@ animations.textContent = `
         to { opacity: 1; transform: translateY(0); }
     }
 `;
-document.head.appendChild(animations);
+document.head.appendChild(additionalStyles);
+
+// Initialize application with error handling
+document.addEventListener('DOMContentLoaded', () => {
+    try {
+        window.modHubOdds = new ModHubOdds();
+        console.log('🎉 ModHub Odds loaded successfully!');
+    } catch (error) {
+        console.error('❌ Error loading ModHub Odds:', error);
+        // Fallback: Ensure free predictions load even if there's an error
+        const freeContainer = document.getElementById('free-predictions');
+        if (freeContainer) {
+            freeContainer.innerHTML = `
+                <div class="prediction-card">
+                    <div class="prediction-header">
+                        <span class="league">Emergency Load</span>
+                        <span class="match-time">Now</span>
+                    </div>
+                    <div class="match-teams">Games will load shortly</div>
+                    <div class="prediction-details">
+                        <span class="prediction-type">Please refresh page</span>
+                        <span class="prediction-odds">@1.00</span>
+                    </div>
+                    <div class="status-badge status-pending">
+                        LOADING
+                    </div>
+                </div>
+            `;
+        }
+    }
+});
+
+// Add debug info
+console.log('🚀 ModHub Odds script loaded successfully!');
