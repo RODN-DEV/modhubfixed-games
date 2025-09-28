@@ -48,8 +48,8 @@ const gameData = {
             league: "Korea - K League 1",
             time: "Today 11:30",
             teams: "FC Anyang vs Gwangju FC",
-            prediction: "Home Win or Draw", 
-            odds: "1.33",
+            prediction: "Home Win ", 
+            odds: "2.33",
             status: "pending"
         },
         {
@@ -60,22 +60,14 @@ const gameData = {
             odds: "1.25",
             status: "pending"
         },
-        // WON/LOST GAMES AFTER
-        {
-            league: "Premier League",
-            time: "Yesterday",
-            teams: "Taichung Futuro vs Taipower",
-            prediction: "Home Win or Away Win",
-            odds: "1.27",
-            status: "won"
-        },
+        // WON/LOST GAMES AFTER 
         {
             league: "K League 2",
-            time: "Yesterday",
+            time: "Today",
             teams: "Gyeongnam FC vs Ansan Greeners",
             prediction: "Home Win or Draw",
             odds: "1.28",
-            status: "lost"
+            status: "won"
         }
     ],
     'odd5': [
