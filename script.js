@@ -1,4 +1,4 @@
-// ===== PROFESSIONAL BETTING ANALYTICS PLATFORM =====
+// ===== MODHUB ODDS - PREMIUM PREDICTIONS =====
 class ModHubOdds {
     constructor() {
         this.passwords = {
@@ -20,15 +20,15 @@ class ModHubOdds {
     }
 
     setupEventListeners() {
-        // Navigation tabs
-        document.querySelectorAll('.nav-tab').forEach(tab => {
-            tab.addEventListener('click', (e) => {
+        // Navigation
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', (e) => {
                 this.switchTab(e.currentTarget.dataset.tab);
             });
         });
 
         // Footer links
-        document.querySelectorAll('.footer-links a[data-tab]').forEach(link => {
+        document.querySelectorAll('.footer-links a').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 this.switchTab(e.currentTarget.dataset.tab);
@@ -36,24 +36,22 @@ class ModHubOdds {
         });
 
         // Enter key for password inputs
-        document.querySelectorAll('.access-code input').forEach(input => {
+        document.querySelectorAll('.password-input').forEach(input => {
             input.addEventListener('keypress', (e) => {
                 if (e.key === 'Enter') {
-                    const tier = e.target.dataset.tier;
-                    this.unlockTier(tier);
+                    const tierCard = e.target.closest('.vip-tier-card');
+                    const tier = tierCard.id.replace('-tier', '');
+                    this.unlockVipTier(tier);
                 }
             });
         });
     }
 
     setupPreloader() {
-        const preloader = document.getElementById('preloader');
-        const mainApp = document.getElementById('main-app');
-        
-        // Auto transition after 5 seconds
+        // Auto hide after 4 seconds
         setTimeout(() => {
             this.hidePreloader();
-        }, 5000);
+        }, 4000);
     }
 
     hidePreloader() {
@@ -69,48 +67,42 @@ class ModHubOdds {
 
     switchTab(tabName) {
         // Update navigation
-        document.querySelectorAll('.nav-tab').forEach(tab => {
-            tab.classList.toggle('active', tab.dataset.tab === tabName);
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.classList.toggle('active', item.dataset.tab === tabName);
         });
 
-        // Show/hide content sections
-        document.querySelectorAll('.content-section').forEach(section => {
-            section.classList.toggle('active', section.id === `${tabName}-tab`);
+        // Show/hide content tabs
+        document.querySelectorAll('.content-tab').forEach(tab => {
+            tab.classList.toggle('active', tab.id === `${tabName}-tab`);
         });
 
-        // Scroll to top
+        // Smooth scroll to top
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    unlockTier(tier) {
-        const input = document.querySelector(`.access-code input[data-tier="${tier}"]`);
+    unlockVipTier(tier) {
+        const tierCard = document.getElementById(`${tier}-tier`);
+        const input = tierCard.querySelector('.password-input');
         const password = input.value.trim();
         
         if (password === this.passwords[tier]) {
             this.unlockedTiers.add(tier);
-            this.showTierContent(tier);
-            this.showNotification('Access granted', 'success');
+            this.showTierPredictions(tier);
+            this.showNotification('✅ Access granted! Loading predictions...', 'success');
             input.value = '';
         } else {
-            this.showNotification('Invalid access code', 'error');
+            this.showNotification('❌ Invalid password. Please try again.', 'error');
             input.value = '';
             this.shakeElement(input);
         }
     }
 
-    showTierContent(tier) {
-        const contentId = `${tier}-content`;
-        const contentElement = document.getElementById(contentId);
+    showTierPredictions(tier) {
+        const predictions = this.getTierPredictions(tier);
+        const container = document.getElementById(`${tier}-predictions`);
         
-        if (contentElement) {
-            contentElement.style.display = 'block';
-            
-            // Load predictions for this tier
-            this.loadTierPredictions(tier);
-            
-            // Show premium content area if this is the first unlocked tier
-            const premiumContent = document.querySelector('.premium-content');
-            premiumContent.style.display = 'block';
+        if (container) {
+            this.renderPredictions(container, predictions, true);
         }
     }
 
@@ -118,15 +110,15 @@ class ModHubOdds {
         const predictions = [
             {
                 league: "Slovakia - 2. Liga",
-                time: "28.09 12:30",
+                time: "Today 12:30",
                 teams: "MSK Zilina B vs Tatran Liptovsky M.",
                 prediction: "Both teams to score",
                 odds: "1.76",
                 status: "pending"
             },
             {
-                league: "Austria - Regionalliga",
-                time: "28.09 12:30", 
+                league: "Austria - Regionalliga", 
+                time: "Today 12:30",
                 teams: "Kapfenberg vs First Vienna FC",
                 prediction: "Over 2.5 goals",
                 odds: "2.35",
@@ -134,7 +126,7 @@ class ModHubOdds {
             },
             {
                 league: "Poland - 1. Liga",
-                time: "28.09 14:00",
+                time: "Today 14:00",
                 teams: "Miedz Legnica vs Znicz Pruszków",
                 prediction: "Home Win",
                 odds: "1.63",
@@ -142,9 +134,9 @@ class ModHubOdds {
             },
             {
                 league: "Italy - Serie C",
-                time: "28.09 14:30",
+                time: "Today 14:30", 
                 teams: "Potenza vs Atalanta U23",
-                prediction: "Both teams to score", 
+                prediction: "Both teams to score",
                 odds: "2.24",
                 status: "pending"
             }
@@ -153,44 +145,38 @@ class ModHubOdds {
         this.renderPredictions('free-predictions', predictions);
     }
 
-    loadTierPredictions(tier) {
-        const predictions = this.getTierPredictions(tier);
-        const containerId = `${tier}-predictions`;
-        this.renderPredictions(containerId, predictions, true);
-    }
-
     getTierPredictions(tier) {
         const predictions = {
             'high-odds': [
                 {
                     league: "Japan - J2 League",
-                    time: "28.09 10:00", 
-                    teams: "Kataller Toyama vs Tokushima Vortis",
+                    time: "Today 10:00",
+                    teams: "Kataller Toyama vs Tokushima Vortis", 
                     prediction: "Away Win",
                     odds: "1.97",
                     status: "pending"
                 },
                 {
                     league: "Korea - K League 1",
-                    time: "28.09 11:30",
-                    teams: "FC Anyang vs Gwangju FC", 
-                    prediction: "Home Win or Draw",
+                    time: "Today 11:30",
+                    teams: "FC Anyang vs Gwangju FC",
+                    prediction: "Home Win or Draw", 
                     odds: "1.33",
                     status: "pending"
                 },
                 {
-                    league: "Japan - J1 League",
-                    time: "28.09 12:00",
+                    league: "Japan - J1 League", 
+                    time: "Today 12:00",
                     teams: "Yokohama FC vs Shonan Bellmare",
-                    prediction: "Home Win or Draw", 
+                    prediction: "Home Win or Draw",
                     odds: "1.25",
                     status: "pending"
                 }
             ],
             'odd5': [
                 {
-                    league: "Germany - Bundesliga", 
-                    time: "28.09 18:30",
+                    league: "Germany - Bundesliga",
+                    time: "Today 18:30", 
                     teams: "FC Koln vs Stuttgart",
                     prediction: "Under 3.5 Goals",
                     odds: "1.57",
@@ -198,61 +184,69 @@ class ModHubOdds {
                 },
                 {
                     league: "Turkey - Super Lig",
-                    time: "28.09 20:00",
+                    time: "Today 20:00",
                     teams: "Fenerbahce vs Antalyaspor",
-                    prediction: "Over 2.5 Goals",
+                    prediction: "Over 2.5 Goals", 
                     odds: "1.53",
+                    status: "pending"
+                },
+                {
+                    league: "Spain - LaLiga",
+                    time: "Today 21:00",
+                    teams: "Barcelona vs Real Sociedad",
+                    prediction: "Home Win", 
+                    odds: "1.40",
                     status: "pending"
                 }
             ],
             'btts': [
                 {
                     league: "Spain - LaLiga",
-                    time: "28.09 17:00",
-                    teams: "Elche CF vs Celta de Vigo", 
+                    time: "Today 17:00", 
+                    teams: "Elche CF vs Celta de Vigo",
                     prediction: "Both Teams to Score",
                     odds: "1.85",
                     status: "pending"
                 },
                 {
                     league: "Scotland - Premiership",
-                    time: "28.09 18:00",
+                    time: "Today 18:00",
                     teams: "Livingston vs Rangers",
-                    prediction: "Both Teams to Score",
-                    odds: "1.75", 
+                    prediction: "Both Teams to Score", 
+                    odds: "1.75",
                     status: "pending"
                 },
                 {
                     league: "Germany - Bundesliga",
-                    time: "28.09 19:30", 
+                    time: "Today 19:30",
                     teams: "Freiburg vs Hoffenheim",
                     prediction: "Both Teams to Score",
-                    odds: "1.65",
+                    odds: "1.65", 
                     status: "pending"
                 }
             ],
             'max-elite': [
                 {
                     league: "Thailand - League 1",
-                    time: "28.09 15:00",
-                    teams: "BG Pathum United vs Port FC",
-                    prediction: "Home Win", 
+                    time: "Today 15:00",
+                    teams: "BG Pathum United vs Port FC", 
+                    prediction: "Home Win",
                     odds: "1.80",
                     status: "pending"
                 },
                 {
                     league: "Denmark - Superliga",
-                    time: "28.09 21:00",
+                    time: "Today 21:00", 
                     teams: "Broendby IF vs Odense Boldklub",
                     prediction: "Home Win",
                     odds: "2.10",
                     status: "pending"
                 },
                 {
-                    league: "Germany - Bundesliga", 
-                    time: "28.09 20:30",
+                    league: "Germany - Bundesliga",
+                    time: "Today 20:30",
                     teams: "Union Berlin vs Hamburger SV",
-                    prediction: "Home Win",
+                    prediction: "Home Win", 
                     odds: "1.95",
                     status: "pending"
                 }
@@ -262,7 +256,7 @@ class ModHubOdds {
         return predictions[tier] || [];
     }
 
-    renderPredictions(containerId, predictions, isPremium = false) {
+    renderPredictions(containerId, predictions, isVip = false) {
         const container = document.getElementById(containerId);
         if (!container) return;
 
@@ -272,12 +266,12 @@ class ModHubOdds {
                     <span class="league">${pred.league}</span>
                     <span class="match-time">${pred.time}</span>
                 </div>
-                <div class="matchup">${pred.teams}</div>
+                <div class="match-teams">${pred.teams}</div>
                 <div class="prediction-details">
                     <span class="prediction-type">${pred.prediction}</span>
                     <span class="prediction-odds">@${pred.odds}</span>
                 </div>
-                <div class="status-indicator status-${pred.status}">
+                <div class="status-badge status-${pred.status}">
                     ${pred.status.toUpperCase()}
                 </div>
             </div>
@@ -299,7 +293,7 @@ class ModHubOdds {
             </button>
         `;
 
-        // Add styles if not present
+        // Add notification styles
         if (!document.querySelector('#notification-styles')) {
             const styles = document.createElement('style');
             styles.id = 'notification-styles';
@@ -309,14 +303,14 @@ class ModHubOdds {
                     top: 20px;
                     right: 20px;
                     padding: 16px 20px;
-                    border-radius: 8px;
+                    border-radius: 12px;
                     color: white;
                     font-weight: 500;
                     z-index: 10000;
                     display: flex;
                     align-items: center;
                     gap: 12px;
-                    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
                     animation: slideInRight 0.3s ease;
                     max-width: 400px;
                     border-left: 4px solid;
@@ -326,8 +320,8 @@ class ModHubOdds {
                     border-left-color: #059669;
                 }
                 .notification-error {
-                    background: var(--error);
-                    border-left-color: #dc2626;
+                    background: var(--primary);
+                    border-left-color: var(--primary-dark);
                 }
                 .notification button {
                     background: transparent;
@@ -336,6 +330,7 @@ class ModHubOdds {
                     cursor: pointer;
                     padding: 4px;
                     border-radius: 4px;
+                    transition: background 0.3s ease;
                 }
                 .notification button:hover {
                     background: rgba(255,255,255,0.1);
@@ -366,33 +361,41 @@ class ModHubOdds {
     }
 
     setCurrentYear() {
-        document.querySelectorAll('.footer-bottom p').forEach(p => {
-            p.innerHTML = p.innerHTML.replace('2024', new Date().getFullYear());
-        });
+        document.querySelector('.footer-bottom p').innerHTML = 
+            document.querySelector('.footer-bottom p').innerHTML.replace('2024', new Date().getFullYear());
     }
 }
 
-// Global functions for onclick handlers
+// Global functions
 function skipPreloader() {
     window.modHubOdds.hidePreloader();
 }
 
-function unlockTier(tier) {
-    window.modHubOdds.unlockTier(tier);
+function unlockVipTier(tier) {
+    window.modHubOdds.unlockVipTier(tier);
 }
 
-// Initialize application
+function switchTab(tab) {
+    window.modHubOdds.switchTab(tab);
+}
+
+// Initialize
 document.addEventListener('DOMContentLoaded', () => {
     window.modHubOdds = new ModHubOdds();
 });
 
-// Add shake animation
-const shakeStyles = document.createElement('style');
-shakeStyles.textContent = `
+// Add animations
+const animations = document.createElement('style');
+animations.textContent = `
     @keyframes shake {
         0%, 100% { transform: translateX(0); }
         25% { transform: translateX(-5px); }
         75% { transform: translateX(5px); }
     }
+    
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
 `;
-document.head.appendChild(shakeStyles);
+document.head.appendChild(animations);
