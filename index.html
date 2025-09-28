@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod Hub Odd5 - Premium Betting Tips</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader with Logo -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="logo-container">
+                <img src="logo.png" alt="Mod Hub Odd5 Logo" class="preloader-logo">
+                <h1 class="logo-text">MOD HUB ODD5</h1>
+            </div>
+            <div id="welcome-text">
+                Welcome to ModHubLte 5 odds source where we are to win and make good money together
+            </div>
+            <div class="floating-elements">
+                <div class="floating-icon"><i class="fas fa-trophy"></i></div>
+                <div class="floating-icon"><i class="fas fa-crown"></i></div>
+                <div class="floating-icon"><i class="fas fa-medal"></i></div>
+                <div class="floating-icon"><i class="fas fa-award"></i></div>
+                <div class="floating-icon"><i class="fas fa-gem"></i></div>
+                <div class="floating-icon"><i class="fas fa-coins"></i></div>
+                <div class="floating-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="floating-icon"><i class="fas fa-futbol"></i></div>
+            </div>
+            <div class="winning-stats">
+                <div class="stat-item">
+                    <i class="fas fa-trophy"></i>
+                    <span>85% Win Rate</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-crown"></i>
+                    <span>Elite Predictions</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span>1000+ Winners</span>
+                </div>
+            </div>
+            <div class="preloader-progress">
+                <div class="preloader-progress-bar"></div>
+            </div>
+            <button class="skip-preloader">Skip Intro</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <header>
+            <div class="logo-container">
+                <img src="logo.png" alt="Mod Hub Odd5 Logo" class="header-logo">
+                <div class="logo-text">MOD HUB ODD5</div>
+            </div>
+            <nav class="tabs">
+                <button class="tab-button active" id="freeTipsBtn" onclick="switchTab('freeTips')">
+                    <i class="fas fa-gift"></i> Free Tips
+                </button>
+                <button class="tab-button" id="vipTipsBtn" onclick="switchTab('vipTips')">
+                    <i class="fas fa-crown"></i> VIP Tips
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <!-- VIP Purchase Section -->
+            <section class="vip-purchase-section" id="vip-purchase">
+                <div class="vip-badge">PREMIUM</div>
+                <h2>Unlock Daily VIP Tips</h2>
+                <p>Get exclusive predictions with high odds and high certainty.</p>
+                <div class="purchase-buttons">
+                    <a href="https://wa.me/+256745430208" target="_blank" class="purchase-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Purchase VIP via WhatsApp
+                    </a>
+                    <a href="https://t.me/v2_0x1" target="_blank" class="purchase-btn telegram-btn">
+                        <i class="fab fa-telegram-plane"></i> Purchase VIP via Telegram
+                    </a>
+                </div>
+                <div class="contact-email">
+                    <i class="fas fa-envelope"></i>
+                    <span>rapturetechrodney@gmail.com</span>
+                </div>
+            </section>
+
+            <!-- Free Tips Content -->
+            <div id="freeTipsContent" class="tab-content active">
+                <h2 class="section-title">Today's Free Tips</h2>
+                <div class="stats-bar">
+                    <div class="stat">
+                        <span class="stat-value">4</span>
+                        <span class="stat-label">Matches</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">2</span>
+                        <span class="stat-label">Won</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">2</span>
+                        <span class="stat-label">Pending</span>
+                    </div>
+                </div>
+                <div class="tips-container" id="freeTipsContainer">
+                    <!-- Free tips will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- VIP Tips Content -->
+            <div id="vipTipsContent" class="tab-content vip-locked">
+                <div class="lock-overlay">
+                    <i class="fas fa-lock"></i>
+                    <h3>VIP Tips are Locked</h3>
+                    <p>Select a VIP tier and enter the password to unlock premium predictions</p>
+                    
+                    <div class="vip-tier-selection">
+                        <div class="vip-tier-card" data-tier="highOdds">
+                            <div class="tier-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>High Odds VIP</h4>
+                            <p>High risk, high reward predictions</p>
+                            <div class="tier-password">
+                                <input type="password" placeholder="Enter password: modhub21">
+                                <button onclick="unlockVipTier('highOdds')">Unlock</button>
+                            </div>
+                        </div>
+                        
+                        <div class="vip-tier-card" data-tier="odd5">
+                            <div class="tier-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>Odd 5 VIP</h4>
+                            <p>Medium odds with high certainty</p>
+                            <div class="tier-password">
+                                <input type="password" placeholder="Enter password: modhub22">
+                                <button onclick="unlockVipTier('odd5')">Unlock</button>
+                            </div>
+                        </div>
+                        
+                        <div class="vip-tier-card" data-tier="btts">
+                            <div class="tier-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <h4>BTTS VIP</h4>
+                            <p>Both Teams to Score predictions</p>
+                            <div class="tier-password">
+                                <input type="password" placeholder="Enter password: modhub23">
+                                <button onclick="unlockVipTier('btts')">Unlock</button>
+                            </div>
+                        </div>
+                        
+                        <div class="vip-tier-card" data-tier="maxElite">
+                            <div class="tier-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h4>MAX ELITE VIP</h4>
+                            <p>Premium high-stake predictions</p>
+                            <div class="tier-password">
+                                <input type="password" placeholder="Enter password: modhub24">
+                                <button onclick="unlockVipTier('maxElite')">Unlock</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="purchase-hint">Don't have the password? <a href="#vip-purchase">Purchase VIP Access</a></p>
+                </div>
+                
+                <!-- VIP Tier Contents -->
+                <div class="vip-content">
+                    <!-- High Odds VIP -->
+                    <div class="vip-tier-content" id="highOddsContent" style="display: none;">
+                        <div class="tier-header">
+                            <i class="fas fa-chart-line"></i>
+                            <h2>High Odds VIP Tips</h2>
+                            <span class="tier-badge">Password: modhub21</span>
+                        </div>
+                        <div class="stats-bar">
+                            <div class="stat">
+                                <span class="stat-value">5</span>
+                                <span class="stat-label">Matches</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">3</span>
+                                <span class="stat-label">Won</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">2</span>
+                                <span class="stat-label">Pending</span>
+                            </div>
+                        </div>
+                        <div class="tips-container" id="highOddsTipsContainer">
+                            <!-- High Odds tips will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <!-- Odd 5 VIP -->
+                    <div class="vip-tier-content" id="odd5Content" style="display: none;">
+                        <div class="tier-header">
+                            <i class="fas fa-star"></i>
+                            <h2>Odd 5 VIP Tips</h2>
+                            <span class="tier-badge">Password: modhub22</span>
+                        </div>
+                        <div class="stats-bar">
+                            <div class="stat">
+                                <span class="stat-value">4</span>
+                                <span class="stat-label">Matches</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">2</span>
+                                <span class="stat-label">Won</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">2</span>
+                                <span class="stat-label">Pending</span>
+                            </div>
+                        </div>
+                        <div class="tips-container" id="odd5TipsContainer">
+                            <!-- Odd 5 tips will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <!-- BTTS VIP -->
+                    <div class="vip-tier-content" id="bttsContent" style="display: none;">
+                        <div class="tier-header">
+                            <i class="fas fa-exchange-alt"></i>
+                            <h2>BTTS VIP Tips</h2>
+                            <span class="tier-badge">Password: modhub23</span>
+                        </div>
+                        <div class="stats-bar">
+                            <div class="stat">
+                                <span class="stat-value">4</span>
+                                <span class="stat-label">Matches</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">2</span>
+                                <span class="stat-label">Won</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">2</span>
+                                <span class="stat-label">Pending</span>
+                            </div>
+                        </div>
+                        <div class="tips-container" id="bttsTipsContainer">
+                            <!-- BTTS tips will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <!-- MAX ELITE VIP -->
+                    <div class="vip-tier-content" id="maxEliteContent" style="display: none;">
+                        <div class="tier-header">
+                            <i class="fas fa-crown"></i>
+                            <h2>MAX ELITE VIP Tips</h2>
+                            <span class="tier-badge">Password: modhub24</span>
+                        </div>
+                        <div class="stats-bar">
+                            <div class="stat">
+                                <span class="stat-value">3</span>
+                                <span class="stat-label">Matches</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">2</span>
+                                <span class="stat-label">Won</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">1</span>
+                                <span class="stat-label">Pending</span>
+                            </div>
+                        </div>
+                        <div class="tips-container" id="maxEliteTipsContainer">
+                            <!-- MAX ELITE tips will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Mod Hub Odd5 Logo" class="footer-logo-img">
+                        <span>MOD HUB ODD5</span>
+                    </div>
+                    <p>Your reliable source for daily football betting predictions. We focus on quality analysis to deliver the best tips to our community.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>rapturetechrodney@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+256 745 430 208</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-telegram-plane"></i>
+                            <span>@v2_0x1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" onclick="switchTab('freeTips'); return false;"><i class="fas fa-gift"></i> Free Tips</a></li>
+                        <li><a href="#" onclick="switchTab('vipTips'); return false;"><i class="fas fa-crown"></i> VIP Tips</a></li>
+                        <li><a href="https://wa.me/+256745430208" target="_blank"><i class="fab fa-whatsapp"></i> Contact WhatsApp</a></li>
+                        <li><a href="https://t.me/v2_0x1" target="_blank"><i class="fab fa-telegram-plane"></i> Contact Telegram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://wa.me/+256745430208" target="_blank" class="social-icon whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://t.me/v2_0x1" target="_blank" class="social-icon telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="mailto:rapturetechrodney@gmail.com" class="social-icon email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="newsletter">
+                        <p>Subscribe for updates</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email">
+                            <button><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Mod Hub Odd5. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                                             </html>
