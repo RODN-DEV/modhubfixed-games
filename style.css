@@ -416,6 +416,259 @@ body {
     background: var(--primary);
 }
 
+/* ===== SUBSCRIPTION PLANS ===== */
+.subscription-plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.plan-card {
+    background: var(--bg-card);
+    border: 2px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.plan-card.featured {
+    border-color: var(--accent);
+    background: linear-gradient(135deg, var(--bg-card), #FFF9F0);
+}
+
+.plan-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: var(--accent);
+    color: var(--text-primary);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.plan-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 auto var(--space-md);
+}
+
+.plan-header h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.plan-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.period {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.savings-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--success);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: var(--space-sm);
+}
+
+.plan-features {
+    margin-bottom: var(--space-lg);
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: 8px 0;
+    color: var(--text-secondary);
+}
+
+.feature-item i {
+    color: var(--success);
+    font-size: 0.9rem;
+}
+
+.plan-actions {
+    text-align: center;
+}
+
+.subscribe-btn {
+    display: block;
+    padding: 12px 24px;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.subscribe-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.subscribe-btn.featured-btn {
+    background: var(--accent);
+    color: var(--text-primary);
+}
+
+.subscribe-btn.featured-btn:hover {
+    background: #FFC44D;
+}
+
+/* ===== CONTACT ADMIN SECTION ===== */
+.contact-admin-section {
+    margin-top: var(--space-xl);
+}
+
+.admin-card {
+    background: linear-gradient(135deg, var(--primary-light), var(--secondary));
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    color: white;
+    text-align: center;
+}
+
+.admin-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+    justify-content: center;
+}
+
+.admin-avatar {
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.admin-info h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+}
+
+.admin-info p {
+    opacity: 0.9;
+}
+
+.admin-actions {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.admin-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: white;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.admin-contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== UPGRADE CTA ===== */
+.upgrade-cta {
+    background: linear-gradient(135deg, var(--primary-light), var(--secondary));
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    margin-top: var(--space-xl);
+    text-align: center;
+    color: white;
+}
+
+.cta-content h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: var(--space-lg);
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    background: white;
+    color: var(--text-primary);
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
 /* VIP Club Section */
 .vip-hero {
     text-align: center;
@@ -656,6 +909,112 @@ body {
     background: #FFC44D;
 }
 
+/* ===== SUPPORT PAGE PRICING ===== */
+.subscription-info {
+    background: var(--bg-card);
+    border: 2px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.subscription-info h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: var(--space-lg);
+    color: var(--text-primary);
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+}
+
+.price-card {
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-light);
+    border-radius: var(--radius);
+    padding: var(--space-lg);
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+.price-card.featured-price {
+    border-color: var(--accent);
+    background: linear-gradient(135deg, var(--bg-secondary), #FFF9F0);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent);
+    color: var(--text-primary);
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.price-card h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    color: var(--text-primary);
+}
+
+.price-amount {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: var(--space-xs);
+}
+
+.savings {
+    font-size: 0.9rem;
+    color: var(--success);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+}
+
+.price-card p {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-lg);
+}
+
+.price-action-btn {
+    display: block;
+    padding: 12px 24px;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.price-action-btn:hover {
+    background: var(--primary-dark);
+}
+
+.price-action-btn.featured-price-btn {
+    background: var(--accent);
+    color: var(--text-primary);
+}
+
+.price-action-btn.featured-price-btn:hover {
+    background: #FFC44D;
+}
+
 .support-info-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -688,6 +1047,33 @@ body {
 
 .info-card li:last-child {
     border-bottom: none;
+}
+
+/* ===== ADMIN CONTACT MINI BUTTONS ===== */
+.admin-contact-buttons {
+    display: flex;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.admin-contact-mini-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.admin-contact-mini-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
 }
 
 /* Adorable Footer */
@@ -785,7 +1171,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -822,4 +1208,37 @@ body {
     .footer-links {
         justify-content: center;
     }
+    
+    .subscription-plans {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .admin-actions {
+        flex-direction: column;
+    }
+    
+    .admin-contact-buttons {
+        flex-direction: column;
+    }
+    
+    .admin-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Additional Animations */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
