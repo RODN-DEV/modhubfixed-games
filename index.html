@@ -3,76 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ModHub Odds - Professional Sports Betting Predictions</title>
+    <title>ModHub Odds - Premium Sports Predictions</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Professional Preloader -->
+    <!-- Beautiful Preloader -->
     <div id="preloader">
         <div class="preloader-container">
-            <div class="brand-section">
-                <div class="logo-wrapper">
-                    <img src="logo.png" alt="ModHub Odds" class="brand-logo">
+            <div class="welcome-content">
+                <div class="logo-spin">
+                    <img src="logo.png" alt="ModHub Odds" class="spinning-logo">
                 </div>
-                <h1 class="brand-title">MODHUB ODDS</h1>
-                <p class="brand-tagline">Professional Sports Betting Analytics</p>
-            </div>
-            
-            <div class="loading-section">
-                <div class="progress-container">
-                    <div class="progress-bar">
-                        <div class="progress-fill"></div>
+                <h1 class="welcome-title">Welcome to ModHub Odds</h1>
+                <p class="welcome-subtitle">Your trusted partner for winning predictions</p>
+                
+                <div class="loading-animation">
+                    <div class="loading-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
                     </div>
-                    <div class="progress-text">Loading Professional Predictions...</div>
+                    <p class="loading-text">Loading amazing predictions...</p>
                 </div>
                 
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Data-Driven Analysis</span>
+                <div class="features-showcase">
+                    <div class="feature">
+                        <i class="fas fa-trophy"></i>
+                        <span>85% Win Rate</span>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature">
+                        <i class="fas fa-bolt"></i>
+                        <span>Live Updates</span>
+                    </div>
+                    <div class="feature">
                         <i class="fas fa-shield-alt"></i>
-                        <span>Verified Track Record</span>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-rocket"></i>
-                        <span>Real-Time Updates</span>
+                        <span>Verified Tips</span>
                     </div>
                 </div>
             </div>
-            
-            <button class="skip-btn" onclick="skipPreloader()">
-                <span>Enter Platform</span>
-                <i class="fas fa-arrow-right"></i>
-            </button>
         </div>
     </div>
 
     <!-- Main Application -->
     <div id="main-app">
-        <!-- Professional Header -->
+        <!-- Adorable Header -->
         <header class="app-header">
-            <div class="header-content">
-                <div class="brand">
-                    <img src="logo.png" alt="ModHub Odds" class="header-logo">
-                    <div class="brand-info">
-                        <h1>MODHUB ODDS</h1>
-                        <span class="brand-subtitle">Professional Betting Analytics</span>
+            <div class="header-container">
+                <div class="brand-section">
+                    <img src="logo.png" alt="ModHub Odds" class="brand-logo">
+                    <div class="brand-text">
+                        <h1>ModHub Odds</h1>
+                        <p>Premium Predictions</p>
                     </div>
                 </div>
                 
                 <nav class="main-nav">
-                    <div class="nav-tabs">
-                        <button class="nav-tab active" data-tab="free">
-                            <i class="fas fa-chart-bar"></i>
-                            <span>Free Analysis</span>
+                    <div class="nav-container">
+                        <button class="nav-item active" data-tab="free">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Free Tips</span>
                         </button>
-                        <button class="nav-tab" data-tab="vip">
+                        <button class="nav-item" data-tab="vip">
                             <i class="fas fa-crown"></i>
-                            <span>Premium Suite</span>
+                            <span>VIP Club</span>
+                        </button>
+                        <button class="nav-item" data-tab="support">
+                            <i class="fas fa-headset"></i>
+                            <span>Support</span>
                         </button>
                     </div>
                 </nav>
@@ -81,213 +80,260 @@
 
         <!-- Main Content -->
         <main class="app-main">
-            <!-- Free Predictions Section -->
-            <section id="free-tab" class="content-section active">
-                <div class="section-header">
-                    <h2>Today's Professional Analysis</h2>
-                    <div class="section-stats">
-                        <div class="stat-card">
-                            <div class="stat-value">4</div>
-                            <div class="stat-label">Matches Analyzed</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-value">76.3%</div>
-                            <div class="stat-label">Success Rate</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-value">2.18</div>
-                            <div class="stat-label">Avg. Value</div>
-                        </div>
+            <!-- Free Tips Section -->
+            <section id="free-tab" class="content-tab active">
+                <div class="tab-header">
+                    <h2>🔥 Today's Free Predictions</h2>
+                    <div class="success-badge">
+                        <i class="fas fa-star"></i>
+                        <span>76% Success Rate</span>
                     </div>
                 </div>
-
-                <div class="predictions-grid" id="free-predictions">
-                    <!-- Free predictions will be loaded here -->
+                
+                <div class="predictions-container" id="free-predictions">
+                    <!-- Free predictions loaded here -->
                 </div>
             </section>
 
-            <!-- Premium Suite Section -->
-            <section id="vip-tab" class="content-section">
-                <!-- Access Control -->
-                <div class="access-control">
-                    <div class="access-panel">
-                        <div class="access-header">
-                            <i class="fas fa-lock"></i>
-                            <h3>Premium Analytics Suite</h3>
-                            <p>Access professional-grade predictions and detailed analysis</p>
+            <!-- VIP Club Section -->
+            <section id="vip-tab" class="content-tab">
+                <div class="vip-hero">
+                    <div class="vip-badge">
+                        <i class="fas fa-gem"></i>
+                        <span>VIP CLUB</span>
+                    </div>
+                    <h2>Unlock Premium Predictions</h2>
+                    <p>Access exclusive high-value betting opportunities</p>
+                </div>
+
+                <!-- VIP Tiers Grid -->
+                <div class="vip-tiers-grid">
+                    <!-- High Odds VIP -->
+                    <div class="vip-tier-card" id="high-odds-tier">
+                        <div class="tier-header">
+                            <div class="tier-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="tier-info">
+                                <h3>High Odds VIP</h3>
+                                <p>Premium high-value predictions</p>
+                            </div>
                         </div>
-                        
-                        <div class="tier-selection">
-                            <div class="tier-option" data-tier="high-odds">
-                                <div class="tier-icon">
-                                    <i class="fas fa-bullseye"></i>
-                                </div>
-                                <div class="tier-info">
-                                    <h4>High Value Plays</h4>
-                                    <p>Premium high-odds selections</p>
-                                    <div class="access-code">
-                                        <input type="password" placeholder="Access Code: modhub21" data-tier="high-odds">
-                                        <button class="unlock-btn" onclick="unlockTier('high-odds')">
-                                            <span>Verify</span>
-                                            <i class="fas fa-key"></i>
-                                        </button>
-                                    </div>
-                                </div>
+                        <div class="tier-content">
+                            <div class="access-form">
+                                <input type="password" placeholder="Enter password: modhub21" class="password-input">
+                                <button class="verify-btn" onclick="unlockVipTier('high-odds')">
+                                    <i class="fas fa-key"></i>
+                                    Verify Access
+                                </button>
                             </div>
-
-                            <div class="tier-option" data-tier="odd5">
-                                <div class="tier-icon">
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <div class="tier-info">
-                                    <h4>Strategic Plays</h4>
-                                    <p>Medium-risk optimized selections</p>
-                                    <div class="access-code">
-                                        <input type="password" placeholder="Access Code: modhub22" data-tier="odd5">
-                                        <button class="unlock-btn" onclick="unlockTier('odd5')">
-                                            <span>Verify</span>
-                                            <i class="fas fa-key"></i>
-                                        </button>
-                                    </div>
-                                </div>
+                            <div class="predictions-container" id="high-odds-predictions">
+                                <!-- Predictions appear here after verification -->
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="tier-option" data-tier="btts">
-                                <div class="tier-icon">
-                                    <i class="fas fa-exchange-alt"></i>
-                                </div>
-                                <div class="tier-info">
-                                    <h4>BTTS Analysis</h4>
-                                    <p>Both Teams to Score predictions</p>
-                                    <div class="access-code">
-                                        <input type="password" placeholder="Access Code: modhub23" data-tier="btts">
-                                        <button class="unlock-btn" onclick="unlockTier('btts')">
-                                            <span>Verify</span>
-                                            <i class="fas fa-key"></i>
-                                        </button>
-                                    </div>
-                                </div>
+                    <!-- Odd 5 VIP -->
+                    <div class="vip-tier-card" id="odd5-tier">
+                        <div class="tier-header">
+                            <div class="tier-icon">
+                                <i class="fas fa-chart-bar"></i>
                             </div>
+                            <div class="tier-info">
+                                <h3>Strategic Plays</h3>
+                                <p>Optimized medium-risk selections</p>
+                            </div>
+                        </div>
+                        <div class="tier-content">
+                            <div class="access-form">
+                                <input type="password" placeholder="Enter password: modhub22" class="password-input">
+                                <button class="verify-btn" onclick="unlockVipTier('odd5')">
+                                    <i class="fas fa-key"></i>
+                                    Verify Access
+                                </button>
+                            </div>
+                            <div class="predictions-container" id="odd5-predictions">
+                                <!-- Predictions appear here after verification -->
+                            </div>
+                        </div>
+                    </div>
 
-                            <div class="tier-option" data-tier="max-elite">
-                                <div class="tier-icon">
-                                    <i class="fas fa-gem"></i>
-                                </div>
-                                <div class="tier-info">
-                                    <h4>Elite Portfolio</h4>
-                                    <p>Maximum confidence premium plays</p>
-                                    <div class="access-code">
-                                        <input type="password" placeholder="Access Code: modhub24" data-tier="max-elite">
-                                        <button class="unlock-btn" onclick="unlockTier('max-elite')">
-                                            <span>Verify</span>
-                                            <i class="fas fa-key"></i>
-                                        </button>
-                                    </div>
-                                </div>
+                    <!-- BTTS VIP -->
+                    <div class="vip-tier-card" id="btts-tier">
+                        <div class="tier-header">
+                            <div class="tier-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="tier-info">
+                                <h3>BTTS Specials</h3>
+                                <p>Both Teams to Score analysis</p>
+                            </div>
+                        </div>
+                        <div class="tier-content">
+                            <div class="access-form">
+                                <input type="password" placeholder="Enter password: modhub23" class="password-input">
+                                <button class="verify-btn" onclick="unlockVipTier('btts')">
+                                    <i class="fas fa-key"></i>
+                                    Verify Access
+                                </button>
+                            </div>
+                            <div class="predictions-container" id="btts-predictions">
+                                <!-- Predictions appear here after verification -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Max Elite VIP -->
+                    <div class="vip-tier-card" id="max-elite-tier">
+                        <div class="tier-header">
+                            <div class="tier-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="tier-info">
+                                <h3>Max Elite</h3>
+                                <p>Ultimate premium selections</p>
+                            </div>
+                        </div>
+                        <div class="tier-content">
+                            <div class="access-form">
+                                <input type="password" placeholder="Enter password: modhub24" class="password-input">
+                                <button class="verify-btn" onclick="unlockVipTier('max-elite')">
+                                    <i class="fas fa-key"></i>
+                                    Verify Access
+                                </button>
+                            </div>
+                            <div class="predictions-container" id="max-elite-predictions">
+                                <!-- Predictions appear here after verification -->
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Premium Content Areas -->
-                <div class="premium-content">
-                    <!-- High Value Plays -->
-                    <div class="tier-content" id="high-odds-content">
-                        <div class="content-header">
-                            <div class="header-main">
-                                <i class="fas fa-bullseye"></i>
-                                <h3>High Value Plays</h3>
-                            </div>
-                            <div class="confidence-badge">
-                                <span>High Confidence</span>
-                            </div>
+            <!-- Support Section -->
+            <section id="support-tab" class="content-tab">
+                <div class="support-hero">
+                    <h2>💬 We're Here to Help</h2>
+                    <p>Get instant support through your preferred channel</p>
+                </div>
+
+                <div class="support-channels">
+                    <!-- WhatsApp Support -->
+                    <div class="support-card whatsapp-card">
+                        <div class="support-icon">
+                            <i class="fab fa-whatsapp"></i>
                         </div>
-                        <div class="predictions-grid" id="high-odds-predictions">
-                            <!-- Content loaded after verification -->
+                        <div class="support-info">
+                            <h3>WhatsApp Support</h3>
+                            <p>Instant messaging support</p>
+                            <a href="https://wa.me/+256745430208" target="_blank" class="support-btn">
+                                <i class="fab fa-whatsapp"></i>
+                                Start Chat
+                            </a>
                         </div>
                     </div>
 
-                    <!-- Strategic Plays -->
-                    <div class="tier-content" id="odd5-content">
-                        <div class="content-header">
-                            <div class="header-main">
-                                <i class="fas fa-star"></i>
-                                <h3>Strategic Plays</h3>
-                            </div>
-                            <div class="confidence-badge">
-                                <span>Optimized Risk</span>
-                            </div>
+                    <!-- Telegram Support -->
+                    <div class="support-card telegram-card">
+                        <div class="support-icon">
+                            <i class="fab fa-telegram"></i>
                         </div>
-                        <div class="predictions-grid" id="odd5-predictions">
-                            <!-- Content loaded after verification -->
-                        </div>
-                    </div>
-
-                    <!-- BTTS Analysis -->
-                    <div class="tier-content" id="btts-content">
-                        <div class="content-header">
-                            <div class="header-main">
-                                <i class="fas fa-exchange-alt"></i>
-                                <h3>BTTS Analysis</h3>
-                            </div>
-                            <div class="confidence-badge">
-                                <span>Statistical Edge</span>
-                            </div>
-                        </div>
-                        <div class="predictions-grid" id="btts-predictions">
-                            <!-- Content loaded after verification -->
+                        <div class="support-info">
+                            <h3>Telegram Channel</h3>
+                            <p>Join our community</p>
+                            <a href="https://t.me/v2_0x1" target="_blank" class="support-btn">
+                                <i class="fab fa-telegram"></i>
+                                Join Channel
+                            </a>
                         </div>
                     </div>
 
-                    <!-- Elite Portfolio -->
-                    <div class="tier-content" id="max-elite-content">
-                        <div class="content-header">
-                            <div class="header-main">
+                    <!-- Email Support -->
+                    <div class="support-card email-card">
+                        <div class="support-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="support-info">
+                            <h3>Email Support</h3>
+                            <p>Detailed assistance</p>
+                            <a href="mailto:rapturetechrodney@gmail.com" class="support-btn">
+                                <i class="fas fa-envelope"></i>
+                                Send Email
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- VIP Purchase -->
+                    <div class="support-card vip-card">
+                        <div class="support-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="support-info">
+                            <h3>Get VIP Access</h3>
+                            <p>Upgrade to premium predictions</p>
+                            <button class="support-btn vip-purchase-btn" onclick="switchTab('vip')">
                                 <i class="fas fa-gem"></i>
-                                <h3>Elite Portfolio</h3>
-                            </div>
-                            <div class="confidence-badge">
-                                <span>Maximum Confidence</span>
-                            </div>
+                                View VIP Plans
+                            </button>
                         </div>
-                        <div class="predictions-grid" id="max-elite-predictions">
-                            <!-- Content loaded after verification -->
-                        </div>
+                    </div>
+                </div>
+
+                <div class="support-info-section">
+                    <div class="info-card">
+                        <h4>🕒 Response Times</h4>
+                        <ul>
+                            <li>WhatsApp: Instant (24/7)</li>
+                            <li>Telegram: Within 1 hour</li>
+                            <li>Email: Within 6 hours</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h4>💡 Quick Tips</h4>
+                        <ul>
+                            <li>Include your username when contacting support</li>
+                            <li>For VIP issues, mention your tier</li>
+                            <li>Screenshots help resolve issues faster</li>
+                        </ul>
                     </div>
                 </div>
             </section>
         </main>
 
-        <!-- Professional Footer -->
+        <!-- Adorable Footer -->
         <footer class="app-footer">
-            <div class="footer-content">
+            <div class="footer-container">
                 <div class="footer-main">
                     <div class="footer-brand">
                         <img src="logo.png" alt="ModHub Odds" class="footer-logo">
-                        <div class="footer-info">
-                            <h4>MODHUB ODDS</h4>
-                            <p>Professional Sports Analytics</p>
+                        <div class="footer-text">
+                            <h4>ModHub Odds</h4>
+                            <p>Making betting smarter and safer</p>
                         </div>
                     </div>
                     
                     <div class="footer-links">
-                        <div class="link-group">
-                            <h5>Platform</h5>
-                            <a href="#" data-tab="free">Free Analysis</a>
-                            <a href="#" data-tab="vip">Premium Suite</a>
-                        </div>
-                        
-                        <div class="link-group">
-                            <h5>Support</h5>
-                            <a href="https://wa.me/+256745430208" target="_blank">WhatsApp Support</a>
-                            <a href="https://t.me/v2_0x1" target="_blank">Telegram Channel</a>
-                            <a href="mailto:rapturetechrodney@gmail.com">Email Support</a>
-                        </div>
+                        <a href="#" data-tab="free">Free Tips</a>
+                        <a href="#" data-tab="vip">VIP Club</a>
+                        <a href="#" data-tab="support">Support</a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://wa.me/+256745430208" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://t.me/v2_0x1" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="mailto:rapturetechrodney@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
                 
                 <div class="footer-bottom">
-                    <p>&copy; 2024 ModHub Odds. Professional betting analytics platform. All predictions are based on statistical analysis.</p>
+                    <p>&copy; 2024 ModHub Odds. Bringing you the best predictions with love ❤️</p>
                 </div>
             </div>
         </footer>
