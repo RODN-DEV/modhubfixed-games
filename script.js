@@ -2,6 +2,46 @@
 const gameData = {
     free: [
         {
+            league: "Categoria Primera A",
+            time: "Today 05:30",
+            teams: "Junior Barranquilla vs Deportivo Pasto",
+            prediction: "Home Win",
+            odds: "1.36",
+            status: "pending"
+        },
+        {
+            league: "Liga Nacional",
+            time: "Today 06:00",
+            teams: "Xelaju MC vs Deportivo Malacateco",
+            prediction: "Home Win",
+            odds: "1.51",
+            status: "pending"
+        },
+        {
+            league: "Liga Primera",
+            time: "Today 06:00",
+            teams: "Managua FC vs Club Sport Sebaco",
+            prediction: "Home/Away (12)",
+            odds: "1.25",
+            status: "pending"
+        },
+        {
+            league: "Liga MX",
+            time: "Today 07:05",
+            teams: "Club Tijuana vs Cruz Azul",
+            prediction: "Away",
+            odds: "2.08",
+            status: "pending"
+        },
+        {
+            league: "TFF First League",
+            time: "Today 15:30",
+            teams: "Keciorengucu vs Pendikspor",
+            prediction: "Home /Away",
+            odds: "1.34",
+            status: "pending"
+        }
+        {
             league: "Slovakia - 2. Liga",
             time: "Today 12:30",
             teams: "MSK Zilina B vs Tatran Liptovsky M.",
