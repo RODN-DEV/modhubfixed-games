@@ -149,7 +149,7 @@ const gameData = {
             time: "Today 15:00",
             teams: "BG Pathum United vs Port FC", 
             prediction: "Home Win",
-            odds: "1.80",
+            odds: "1.90",
             status: "pending"
         },
         {
@@ -164,8 +164,8 @@ const gameData = {
             league: "Germany - Bundesliga",
             time: "Today 20:30",
             teams: "Union Berlin vs Hamburger SV",
-            prediction: "Home Win", 
-            odds: "1.95",
+            prediction: "Away/Draw ", 
+            odds: "1.65",
             status: "pending"
         },
         // WON/LOST GAMES AFTER
