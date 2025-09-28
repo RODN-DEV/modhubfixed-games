@@ -31,7 +31,7 @@ const gameData = {
             teams: "Potenza vs Atalanta U23",
             prediction: "Both teams to score",
             odds: "2.24",
-            status: "won"
+            status: "lost"
         }
     ],
     'high-odds': [
