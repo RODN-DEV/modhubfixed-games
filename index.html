@@ -9,12 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Container for custom notifications (replaces alert/confirm) -->
+    <div id="message-box-container"></div>
+
     <!-- Beautiful Preloader -->
     <div id="preloader">
         <div class="preloader-container">
             <div class="welcome-content">
                 <div class="logo-spin">
-                    <img src="logo.png" alt="ModHub Odds" class="spinning-logo">
+                    <!-- Using a placeholder for logo.png -->
+                    <img src="https://placehold.co/80x80/FF6B8B/FFFFFF?text=MHO" alt="ModHub Odds" class="spinning-logo" onerror="this.onerror=null;this.src='https://placehold.co/80x80/FF6B8B/FFFFFF?text=MHO';">
                 </div>
                 <h1 class="welcome-title">Welcome to ModHub Odds</h1>
                 <p class="welcome-subtitle">Your trusted partner for winning predictions</p>
@@ -30,452 +34,125 @@
                 
                 <div class="features-showcase">
                     <div class="feature">
-                        <i class="fas fa-trophy"></i>
-                        <span>85% Win Rate</span>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-bolt"></i>
-                        <span>Live Updates</span>
+                        <i class="fas fa-chart-line"></i>
+                        <p>High Win Rate</p>
                     </div>
                     <div class="feature">
                         <i class="fas fa-shield-alt"></i>
-                        <span>Verified Tips</span>
+                        <p>Secure Access</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-dollar-sign"></i>
+                        <p>Consistent Profit</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Main Application -->
-    <div id="main-app">
-        <!-- Adorable Header -->
-        <header class="app-header">
-            <div class="header-container">
-                <div class="brand-section">
-                    <img src="logo.png" alt="ModHub Odds" class="brand-logo">
-                    <div class="brand-text">
-                        <h1>ModHub Odds</h1>
-                        <p>Premium Predictions</p>
+    <div class="main-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="container header-container">
+                <a href="#" class="logo-section" data-tab="home">
+                    <!-- Using a placeholder for logo.png -->
+                    <img src="https://placehold.co/40x40/FF6B8B/FFFFFF?text=MHO" alt="ModHub Odds" onerror="this.onerror=null;this.src='https://placehold.co/40x40/FF6B8B/FFFFFF?text=MHO';">
+                    <div class="logo-text">
+                        <h3>ModHub Odds</h3>
                     </div>
-                </div>
+                </a>
                 
-                <nav class="main-nav">
-                    <div class="nav-container">
-                        <button class="nav-item active" data-tab="free">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Free Tips</span>
-                        </button>
-                        <button class="nav-item" data-tab="vip">
-                            <i class="fas fa-crown"></i>
-                            <span>VIP Club</span>
-                        </button>
-                        <button class="nav-item" data-tab="support">
-                            <i class="fas fa-headset"></i>
-                            <span>Support</span>
-                        </button>
-                    </div>
+                <nav class="nav-container">
+                    <a class="nav-item active" data-tab="home">Home</a>
+                    <a class="nav-item" data-tab="free">Free Tips</a>
+                    <a class="nav-item" data-tab="vip">VIP Club</a>
+                    <a class="nav-item" data-tab="support">Support</a>
                 </nav>
             </div>
         </header>
 
         <!-- Main Content -->
-        <main class="app-main">
-            <!-- Free Tips Section -->
-            <section id="free-tab" class="content-tab active">
-                <div class="tab-header">
-                    <h2>🔥 Today's Free Predictions</h2>
-                    <div class="success-badge">
-                        <i class="fas fa-star"></i>
-                        <span>76% Success Rate</span>
-                    </div>
-                </div>
-                
-                <div class="predictions-container" id="free-predictions">
-                    <!-- Free predictions loaded here -->
-                </div>
-
-                <!-- Upgrade CTA -->
-                <div class="upgrade-cta">
-                    <div class="cta-content">
-                        <h3>🚀 Ready for Premium Predictions?</h3>
-                        <p>Upgrade to VIP and get access to exclusive high-value betting opportunities</p>
-                        <button class="cta-button" onclick="switchTab('vip')">
-                            <i class="fas fa-gem"></i>
-                            View VIP Plans
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- VIP Club Section -->
-            <section id="vip-tab" class="content-tab">
-                <div class="vip-hero">
-                    <div class="vip-badge">
-                        <i class="fas fa-gem"></i>
-                        <span>VIP CLUB</span>
-                    </div>
-                    <h2>Unlock Premium Predictions</h2>
-                    <p>Access exclusive high-value betting opportunities with proven success</p>
-                </div>
-
-                <!-- Subscription Plans -->
-                <div class="subscription-plans">
-                    <div class="plan-card weekly-plan">
-                        <div class="plan-header">
-                            <div class="plan-icon">
-                                <i class="fas fa-calendar-week"></i>
-                            </div>
-                            <h3>Weekly Plan</h3>
-                            <div class="plan-price">
-                                <span class="price">$15</span>
-                                <span class="period">/ week</span>
-                            </div>
-                        </div>
-                        <div class="plan-features">
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Access to all VIP tiers</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Daily premium predictions</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>24/7 support</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Live match updates</span>
-                            </div>
-                        </div>
-                        <div class="plan-actions">
-                            <a href="https://wa.me/+256745430208?text=Hi! I want to purchase the Weekly VIP plan for $15" 
-                               target="_blank" class="subscribe-btn whatsapp-btn">
-                                <i class="fab fa-whatsapp"></i>
-                                Subscribe via WhatsApp
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="plan-card monthly-plan featured">
-                        <div class="plan-badge">Most Popular</div>
-                        <div class="plan-header">
-                            <div class="plan-icon">
-                                <i class="fas fa-calendar-alt"></i>
-                            </div>
-                            <h3>Monthly Plan</h3>
-                            <div class="plan-price">
-                                <span class="price">$32</span>
-                                <span class="period">/ month</span>
-                            </div>
-                            <div class="savings-badge">
-                                <i class="fas fa-percentage"></i>
-                                Save 25%
-                            </div>
-                        </div>
-                        <div class="plan-features">
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>All weekly features</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Priority support</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Advanced analytics</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Custom predictions</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check"></i>
-                                <span>Money-back guarantee</span>
-                            </div>
-                        </div>
-                        <div class="plan-actions">
-                            <a href="https://wa.me/+256745430208?text=Hi! I want to purchase the Monthly VIP plan for $32" 
-                               target="_blank" class="subscribe-btn whatsapp-btn featured-btn">
-                                <i class="fab fa-whatsapp"></i>
-                                Get Monthly Plan
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- VIP Tiers Grid -->
-                <div class="vip-tiers-grid">
-                    <!-- High Odds VIP -->
-                    <div class="vip-tier-card" id="high-odds-tier">
-                        <div class="tier-header">
-                            <div class="tier-icon">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                            <div class="tier-info">
-                                <h3>High Odds VIP</h3>
-                                <p>Premium high-value predictions</p>
-                            </div>
-                        </div>
-                        <div class="tier-content">
-                            <div class="access-form">
-                                <input type="password" placeholder="Enter Code🔑" class="password-input">
-                                <button class="verify-btn" onclick="unlockVipTier('high-odds')">
-                                    <i class="fas fa-key"></i>
-                                    Verify Access
-                                </button>
-                            </div>
-                            <div class="predictions-container" id="high-odds-predictions">
-                                <!-- Predictions appear here after verification -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Odd 5 VIP -->
-                    <div class="vip-tier-card" id="odd5-tier">
-                        <div class="tier-header">
-                            <div class="tier-icon">
-                                <i class="fas fa-chart-bar"></i>
-                            </div>
-                            <div class="tier-info">
-                                <h3>Strategic Plays</h3>
-                                <p>Optimized medium-risk selections</p>
-                            </div>
-                        </div>
-                        <div class="tier-content">
-                            <div class="access-form">
-                                <input type="password" placeholder="Enter code🔑" class="password-input">
-                                <button class="verify-btn" onclick="unlockVipTier('odd5')">
-                                    <i class="fas fa-key"></i>
-                                    Verify Access
-                                </button>
-                            </div>
-                            <div class="predictions-container" id="odd5-predictions">
-                                <!-- Predictions appear here after verification -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- BTTS VIP -->
-                    <div class="vip-tier-card" id="btts-tier">
-                        <div class="tier-header">
-                            <div class="tier-icon">
-                                <i class="fas fa-exchange-alt"></i>
-                            </div>
-                            <div class="tier-info">
-                                <h3>BTTS Specials</h3>
-                                <p>Both Teams to Score analysis</p>
-                            </div>
-                        </div>
-                        <div class="tier-content">
-                            <div class="access-form">
-                                <input type="password" placeholder="Enter code🔑" class="password-input">
-                                <button class="verify-btn" onclick="unlockVipTier('btts')">
-                                    <i class="fas fa-key"></i>
-                                    Verify Access
-                                </button>
-                            </div>
-                            <div class="predictions-container" id="btts-predictions">
-                                <!-- Predictions appear here after verification -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Max Elite VIP -->
-                    <div class="vip-tier-card" id="max-elite-tier">
-                        <div class="tier-header">
-                            <div class="tier-icon">
-                                <i class="fas fa-crown"></i>
-                            </div>
-                            <div class="tier-info">
-                                <h3>Max Elite</h3>
-                                <p>Ultimate premium selections</p>
-                            </div>
-                        </div>
-                        <div class="tier-content">
-                            <div class="access-form">
-                                <input type="password" placeholder="Enter password" class="password-input">
-                                <button class="verify-btn" onclick="unlockVipTier('max-elite')">
-                                    <i class="fas fa-key"></i>
-                                    Verify Access
-                                </button>
-                            </div>
-                            <div class="predictions-container" id="max-elite-predictions">
-                                <!-- Predictions appear here after verification -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Admin Section -->
-                <div class="contact-admin-section">
-                    <div class="admin-card">
-                        <div class="admin-header">
-                            <div class="admin-avatar">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <div class="admin-info">
-                                <h3>Need Personal Assistance?</h3>
-                                <p>Contact our admin directly for any questions</p>
-                            </div>
-                        </div>
-                        <div class="admin-actions">
-                            <a href="https://wa.me/+256745430208?text=Hi! I need assistance with ModHub Odds VIP subscription" 
-                               target="_blank" class="admin-contact-btn whatsapp-btn">
-                                <i class="fab fa-whatsapp"></i>
-                                Contact Admin via WhatsApp
-                            </a>
-                            <a href="https://t.me/v2_0x1" target="_blank" class="admin-contact-btn telegram-btn">
-                                <i class="fab fa-telegram"></i>
-                                Contact Admin via Telegram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Support Section -->
-            <section id="support-tab" class="content-tab">
-                <div class="support-hero">
-                    <h2>💬 We're Here to Help</h2>
-                    <p>Get instant support through your preferred channel</p>
-                </div>
-
-                <div class="support-channels">
-                    <!-- WhatsApp Support -->
-                    <div class="support-card whatsapp-card">
-                        <div class="support-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="support-info">
-                            <h3>WhatsApp Support</h3>
-                            <p>Instant messaging support</p>
-                            <a href="https://wa.me/+256745430208" target="_blank" class="support-btn">
-                                <i class="fab fa-whatsapp"></i>
-                                Start Chat
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Telegram Support -->
-                    <div class="support-card telegram-card">
-                        <div class="support-icon">
-                            <i class="fab fa-telegram"></i>
-                        </div>
-                        <div class="support-info">
-                            <h3>Telegram Channel</h3>
-                            <p>Join our community</p>
-                            <a href="https://t.me/v2_0x1" target="_blank" class="support-btn">
-                                <i class="fab fa-telegram"></i>
-                                Join Channel
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Email Support -->
-                    <div class="support-card email-card">
-                        <div class="support-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="support-info">
-                            <h3>Email Support</h3>
-                            <p>Detailed assistance</p>
-                            <a href="mailto:rapturetechrodney@gmail.com" class="support-btn">
-                                <i class="fas fa-envelope"></i>
-                                Send Email
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- VIP Purchase -->
-                    <div class="support-card vip-card">
-                        <div class="support-icon">
-                            <i class="fas fa-crown"></i>
-                        </div>
-                        <div class="support-info">
-                            <h3>Get VIP Access</h3>
-                            <p>Upgrade to premium predictions</p>
-                            <button class="support-btn vip-purchase-btn" onclick="switchTab('vip')">
-                                <i class="fas fa-gem"></i>
-                                View VIP Plans
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Subscription Info -->
-                <div class="subscription-info">
-                    <h3>💎 VIP Subscription Plans</h3>
-                    <div class="pricing-cards">
-                        <div class="price-card">
-                            <h4>Weekly Plan</h4>
-                            <div class="price-amount">$15</div>
-                            <p>Perfect for trying our premium service</p>
-                            <a href="https://wa.me/+256745430208?text=Hi! I want to purchase the Weekly VIP plan for $15" 
-                               target="_blank" class="price-action-btn">
-                                Get Weekly Plan
-                            </a>
-                        </div>
-                        <div class="price-card featured-price">
-                            <div class="popular-badge">Most Popular</div>
-                            <h4>Monthly Plan</h4>
-                            <div class="price-amount">$32</div>
-                            <div class="savings">Save 25% vs weekly</div>
-                            <p>Best value for serious bettors</p>
-                            <a href="https://wa.me/+256745430208?text=Hi! I want to purchase the Monthly VIP plan for $32" 
-                               target="_blank" class="price-action-btn featured-price-btn">
-                                Get Monthly Plan
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="support-info-section">
-                    <div class="info-card">
-                        <h4>🕒 Response Times</h4>
-                        <ul>
-                            <li>WhatsApp: Instant (24/7)</li>
-                            <li>Telegram: Within 1 hour</li>
-                            <li>Email: Within 6 hours</li>
-                        </ul>
+        <main class="content">
+            <div class="container">
+                <!-- Home Tab (Default landing page) -->
+                <section id="home" class="tab-content">
+                    <div class="content-header">
+                        <h2>🚀 Welcome to ModHub Odds</h2>
+                        <p>Your one-stop source for reliable sports predictions and exclusive VIP access!</p>
+                        <a href="#" class="btn btn-primary" data-tab="vip">Explore VIP Club Now</a>
                     </div>
                     
-                    <div class="info-card">
-                        <h4>💡 Quick Tips</h4>
-                        <ul>
-                            <li>Include your username when contacting support</li>
-                            <li>For VIP issues, mention your tier</li>
-                            <li>Screenshots help resolve issues faster</li>
-                            <li>Payment confirmation speeds up activation</li>
-                        </ul>
+                    <h3 style="text-align: center; margin-bottom: 2rem;">Latest Free Predictions</h3>
+                    <div class="predictions-container" id="home-predictions">
+                        <!-- Free predictions will load here -->
                     </div>
+                </section>
 
-                    <div class="info-card">
-                        <h4>📞 Contact Admin</h4>
-                        <p>For urgent issues or personal assistance, contact our admin directly:</p>
-                        <div class="admin-contact-buttons">
-                            <a href="https://wa.me/+256745430208" target="_blank" class="admin-contact-mini-btn">
-                                <i class="fab fa-whatsapp"></i>
-                                WhatsApp Admin
-                            </a>
-                            <a href="https://t.me/v2_0x1" target="_blank" class="admin-contact-mini-btn">
-                                <i class="fab fa-telegram"></i>
-                                Telegram Admin
-                            </a>
+                <!-- Free Tips Tab -->
+                <section id="free" class="tab-content" style="display:none;">
+                    <div class="content-header">
+                        <h2>🆓 Daily Free Tips</h2>
+                        <p>Enjoy our selection of well-analyzed free tips to get you started.</p>
+                    </div>
+                    
+                    <div class="predictions-container" id="free-predictions">
+                        <!-- Free predictions will load here -->
+                    </div>
+                </section>
+
+                <!-- VIP Club Tab (VIP Game will be rendered here) -->
+                <section id="vip" class="tab-content" style="display:none;">
+                    <div class="content-header">
+                        <h2>💰 VIP Club: Premium Winning Bets & Games</h2>
+                        <p>Unlock our exclusive tiers with an access code to view predictions or play the Max Elite Game!</p>
+                    </div>
+                    
+                    <!-- VIP Tiers Grid Container - Content dynamically replaced by game on unlock -->
+                    <div class="vip-tiers-grid" id="vip-tiers-container">
+                        <!-- Content will be injected by JS (Locked Tiers or Unlocked Game/Predictions) -->
+                    </div>
+                </section>
+
+                <!-- Support Tab -->
+                <section id="support" class="tab-content" style="display:none;">
+                    <div class="content-header">
+                        <h2>🤝 Need Assistance?</h2>
+                        <p>Contact us through our official channels for quick and reliable support.</p>
+                    </div>
+                    
+                    <div class="support-channels">
+                        <div class="channel-card">
+                            <i class="fab fa-whatsapp"></i>
+                            <h4>WhatsApp Support</h4>
+                            <p>For instant messaging and quick queries.</p>
+                            <a href="https://wa.me/+256745430208" target="_blank" class="btn btn-primary">Chat Now</a>
+                        </div>
+                        
+                        <div class="channel-card">
+                            <i class="fab fa-telegram"></i>
+                            <h4>Telegram Channel</h4>
+                            <p>Join our channel for updates and announcements.</p>
+                            <a href="https://t.me/v2_0x1" target="_blank" class="btn btn-primary">Join Channel</a>
+                        </div>
+                        
+                        <div class="channel-card">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email Support</h4>
+                            <p>For detailed inquiries and official communication.</p>
+                            <a href="mailto:rapturetechrodney@gmail.com" class="btn btn-primary">Send Email</a>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
 
-        <!-- Adorable Footer -->
-        <footer class="app-footer">
-            <div class="footer-container">
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
                 <div class="footer-main">
-                    <div class="footer-brand">
-                        <img src="logo.png" alt="ModHub Odds" class="footer-logo">
+                    <div class="footer-logo-section">
+                        <!-- Using a placeholder for logo.png -->
+                        <img src="https://placehold.co/40x40/FF6B8B/FFFFFF?text=MHO" alt="ModHub Odds" class="footer-logo" onerror="this.onerror=null;this.src='https://placehold.co/40x40/FF6B8B/FFFFFF?text=MHO';">
                         <div class="footer-text">
                             <h4>ModHub Odds</h4>
                             <p>Making betting smarter and safer</p>
@@ -502,7 +179,7 @@
                 </div>
                 
                 <div class="footer-bottom">
-                    <p>&copy; 2024 ModHub Odds. Bringing you the best predictions with love ❤️</p>
+                    <p>&copy; <span id="current-year">2024</span> ModHub Odds. Bringing you the best predictions with love ❤️</p>
                 </div>
             </div>
         </footer>
@@ -511,3 +188,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
