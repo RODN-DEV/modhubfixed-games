@@ -1,0 +1,217 @@
+/* Add these styles to your existing CSS */
+
+/* Enhanced Preloader */
+.floating-elements .floating-icon:nth-child(1) { top: 15%; left: 8%; animation-delay: 0s; }
+.floating-elements .floating-icon:nth-child(2) { top: 25%; left: 85%; animation-delay: 1s; }
+.floating-elements .floating-icon:nth-child(3) { top: 65%; left: 12%; animation-delay: 2s; }
+.floating-elements .floating-icon:nth-child(4) { top: 75%; left: 80%; animation-delay: 3s; }
+.floating-elements .floating-icon:nth-child(5) { top: 35%; left: 5%; animation-delay: 4s; }
+.floating-elements .floating-icon:nth-child(6) { top: 55%; left: 90%; animation-delay: 5s; }
+.floating-elements .floating-icon:nth-child(7) { top: 85%; left: 20%; animation-delay: 6s; }
+.floating-elements .floating-icon:nth-child(8) { top: 45%; left: 75%; animation-delay: 7s; }
+
+.winning-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-item i {
+    color: var(--primary-pink);
+    font-size: 1.2em;
+}
+
+/* VIP Tier Selection */
+.vip-tier-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+    max-width: 1100px;
+}
+
+.vip-tier-card {
+    background: white;
+    padding: 25px;
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.vip-tier-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary-pink);
+}
+
+.tier-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    background: linear-gradient(135deg, var(--primary-pink), #ff1493);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.vip-tier-card h4 {
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.vip-tier-card p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.tier-password {
+    display: flex;
+    gap: 10px;
+}
+
+.tier-password input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.9em;
+    transition: var(--transition);
+}
+
+.tier-password input:focus {
+    border-color: var(--primary-pink);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 105, 180, 0.2);
+}
+
+.tier-password button {
+    background: var(--primary-pink);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.tier-password button:hover {
+    background: var(--primary-dark);
+}
+
+/* VIP Tier Content */
+.vip-tier-content {
+    animation: fadeIn 0.5s ease;
+}
+
+.tier-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.tier-header i {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-pink), #ff1493);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3em;
+}
+
+.tier-header h2 {
+    color: var(--primary-dark);
+    margin: 0;
+    flex: 1;
+}
+
+.tier-badge {
+    background: var(--primary-pink);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+/* Enhanced VIP Lock Overlay */
+.vip-locked .lock-overlay {
+    padding: 40px 20px;
+}
+
+.vip-locked .lock-overlay h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.vip-locked .lock-overlay p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design for VIP Tiers */
+@media (max-width: 768px) {
+    .vip-tier-selection {
+        grid-template-columns: 1fr;
+    }
+    
+    .tier-password {
+        flex-direction: column;
+    }
+    
+    .tier-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .winning-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .stat-item {
+        width: 200px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .vip-tier-card {
+        padding: 20px 15px;
+    }
+    
+    .vip-locked .lock-overlay {
+        padding: 30px 15px;
+    }
+}
