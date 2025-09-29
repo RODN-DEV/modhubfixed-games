@@ -6,7 +6,7 @@ const gameData = {
             time: "Today 12:00",
             teams: "Stabæk II vs Sarpsborg 08 II",
             prediction: "Over 2.5 goals",
-            odds: "1.33",
+            odds: "1.43",
             status: "won"
         },
         {
@@ -15,7 +15,7 @@ const gameData = {
             teams: "Arouca vs FC Porto",
             prediction: "Away Win",
             odds: "1.33",
-            status: "won"
+            status: "pending"
         },
         {
             league: "Bolivia - Primeira División",
@@ -23,7 +23,7 @@ const gameData = {
             teams: "The Strongest vs Oriente Petrolero",
             prediction: "Home Win",
             odds: "1.30",
-            status: "won"
+            status: "pending"
         },
         {
             league: "Uzbekistan - Super League",
@@ -55,7 +55,7 @@ const gameData = {
             teams: "Keciorengucu vs Pendikspor",
             prediction: "Home /Away",
             odds: "1.34",
-            status: "pending"
+            status: "lost"
         },
         {
             league: "Categoria Primera A",
@@ -122,15 +122,15 @@ const gameData = {
                 teams: "HJK Helsinki",
                 prediction: "Over 2.5 goals",
                 odds: "1.40",
-                status: "pending"
+                status: "won"
             },
             {
                 league: "Sweden - Allsvenskan",
                 time: "Today 20:00",
                 teams: "Djurgårdens",
-                prediction: "Under 3.5 goals",
+                prediction: "under 3.5 goals",
                 odds: "1.45",
-                status: "pending"
+                status: "lost"
             },
             {
                 league: "Norway - 1st Division",
@@ -138,7 +138,7 @@ const gameData = {
                 teams: "Moss vs Lillestrom",
                 prediction: "Away Win",
                 odds: "1.40",
-                status: "pending"
+                status: "won"
             },
             {
                 league: "Iceland - Urvalsdelid",
@@ -146,7 +146,7 @@ const gameData = {
                 teams: "Stjarnan vs V. Reykjavik",
                 prediction: "Both teams to score",
                 odds: "1.45",
-                status: "pending"
+                status: "won"
             },
             {
                 league: "Norway - Eliteserien",
@@ -154,7 +154,7 @@ const gameData = {
                 teams: "Haugesund vs Sandefjord",
                 prediction: "Over 2.5 goals",
                 odds: "1.53",
-                status: "pending"
+                status: "won"
             },
         {
             league: "Japan - J2 League",
@@ -198,7 +198,7 @@ const gameData = {
                 teams: "Besiktas vs Kocaelispor",
                 prediction: "Home Win",
                 odds: "1.47",
-                status: "pending"
+                status: "won"
             },
             {
                 league: "Portugal - Primeira Liga",
@@ -214,7 +214,7 @@ const gameData = {
                 teams: "ADO Den Haag vs TOP Oss",
                 prediction: "Home Win",
                 odds: "1.25",
-                status: "pending"
+                status: "won"
             },
             {
                 league: "Spain - LaLiga 2",
@@ -230,7 +230,7 @@ const gameData = {
                 teams: "Valencia vs Real Oviedo",
                 prediction: "Under 3.5 goals",
                 odds: "1.26",
-                status: "pending"
+                status: "won"
             },
         {
             league: "Germany - Bundesliga",
@@ -290,7 +290,7 @@ const gameData = {
         teams: "Odd vs Aalesund",
         prediction: "Both Teams to Score",
         odds: "1.99",
-        status: "pending"
+        status: "lost"
     },
     {
         league: "Greece - Super League",
@@ -298,7 +298,7 @@ const gameData = {
         teams: "Atromitos vs Larissa",
         prediction: "Both Teams to Score",
         odds: "1.99",
-        status: "pending"
+        status: "won"
     },
         
         // WON/LOST GAMES AFTER
@@ -357,7 +357,7 @@ const gameData = {
         league: "Poland - 1. Liga",
         time: "Today 20:00",
         teams: "Zaglebie Lubin vs Arka Gdynia",
-        prediction: "BTTS",
+        prediction: "BTTS No",
         odds: "1.80",
         status: "won"
     },
