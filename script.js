@@ -116,6 +116,46 @@ const gameData = {
     ],
     'high-odds': [
         // PENDING GAMES FIRST
+            {
+                league: "Finland - Veikkausiliga",
+                time: "Today 20:00",
+                teams: "HJK Helsinki",
+                prediction: "Over 2.5 goals",
+                odds: "1.40",
+                status: "pending"
+            },
+            {
+                league: "Sweden - Allsvenskan",
+                time: "Today 20:00",
+                teams: "Djurgårdens",
+                prediction: "Under 3.5 goals",
+                odds: "1.45",
+                status: "pending"
+            },
+            {
+                league: "Norway - 1st Division",
+                time: "Today 20:00",
+                teams: "Moss vs Lillestrom",
+                prediction: "Away Win",
+                odds: "1.40",
+                status: "pending"
+            },
+            {
+                league: "Iceland - Urvalsdelid",
+                time: "Today 22:15",
+                teams: "Stjarnan vs V. Reykjavik",
+                prediction: "Both teams to score",
+                odds: "1.45",
+                status: "pending"
+            },
+            {
+                league: "Norway - Eliteserien",
+                time: "Today 20:00",
+                teams: "Haugesund vs Sandefjord",
+                prediction: "Over 2.5 goals",
+                odds: "1.53",
+                status: "pending"
+            },
         {
             league: "Japan - J2 League",
             time: "Today 10:00",
