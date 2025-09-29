@@ -338,12 +338,45 @@ const gameData = {
     'max-elite': [
         // PENDING GAMES FIRST
         {
+        league: "Ukraine - Lower League",
+        time: "Today 16:30",
+        teams: "FSC Mariupol vs Bukovyna ",
+        prediction: "Away Win",
+        odds: "1.83",
+        status: "pending"
+    },
+    {
+        league: "Armenia - Premier League",
+        time: "Today 19:00",
+        teams: "BKMA vs Ararat-Armenia",
+        prediction: "Away Win",
+        odds: "1.37",
+        status: "pending"
+    },
+    {
+        league: "Poland - 1. Liga",
+        time: "Today 20:00",
+        teams: "Zaglebie Lubin vs Arka Gdynia",
+        prediction: "BTTS",
+        odds: "1.80",
+        status: "pending"
+    },
+    {
+        league: "Denmark - Superliga",
+        time: "Today 21:00",
+        teams: "FC Midtjylland vs Randers FC",
+        prediction: "Home&Over 1.5 goals",
+        odds: "2.04",
+        status: "pending"
+    },      
+        // WON/LOST GAMES AFTER
+        {
             league: "Thailand - League 1",
             time: "Today 15:00",
             teams: "BG Pathum United vs Port FC", 
             prediction: "Home Win",
             odds: "1.90",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Denmark - Superliga",
@@ -351,7 +384,7 @@ const gameData = {
             teams: "Broendby IF vs Odense Boldklub",
             prediction: "Home Win",
             odds: "2.10",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Germany - Bundesliga",
@@ -359,12 +392,11 @@ const gameData = {
             teams: "Union Berlin vs Hamburger SV",
             prediction: "Away/Draw ", 
             odds: "1.65",
-            status: "pending"
+            status: "won"
         },
-        // WON/LOST GAMES AFTER
         {
             league: "Multiple Leagues",
-            time: "Yesterday",
+            time: "Saturday",
             teams: "POTENTER FIVE Accumulator",
             prediction: "5-Fold Special",
             odds: "15.50",
@@ -376,9 +408,9 @@ const gameData = {
 // Password configuration
 const VIP_PASSWORDS = {
     'high-odds': 'modhub21',
-    'odd5': 'modhub22',
-    'btts': 'modhub23',
-    'max-elite': 'modhub24'
+    'odd5': 'modhubi',
+    'btts': 'modhubj',
+    'max-elite': 'modhubk'
 };
 
 // Track unlocked tiers
