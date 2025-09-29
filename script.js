@@ -7,7 +7,7 @@ const gameData = {
             teams: "Stabæk II vs Sarpsborg 08 II",
             prediction: "Over 2.5 goals",
             odds: "1.33",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Portugal - Primeira Liga",
@@ -15,7 +15,7 @@ const gameData = {
             teams: "Arouca vs FC Porto",
             prediction: "Away Win",
             odds: "1.33",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Bolivia - Primeira División",
@@ -23,7 +23,7 @@ const gameData = {
             teams: "The Strongest vs Oriente Petrolero",
             prediction: "Home Win",
             odds: "1.30",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Uzbekistan - Super League",
@@ -31,7 +31,7 @@ const gameData = {
             teams: "Dinamo Samarqand vs Shortan",
             prediction: "Home Win",
             odds: "1.38",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Turkey - Süper Lig",
@@ -39,7 +39,7 @@ const gameData = {
             teams: "Besiktas vs Kocaelispor",
             prediction: "Home Win",
             odds: "1.40",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Liga MX",
@@ -47,7 +47,7 @@ const gameData = {
             teams: "Club Tijuana vs Cruz Azul",
             prediction: "Away",
             odds: "2.08",
-            status: "pending"
+            status: "lost"
         },
         {
             league: "TFF First League",
@@ -274,7 +274,7 @@ const gameData = {
         teams: "Keciorengucu vs Pendikspor",
         prediction: "Both Teams to Score",
         odds: "1.99",
-        status: "pending"
+        status: "lost"
     },
     {
         league: "Poland - Lower League",
@@ -282,7 +282,7 @@ const gameData = {
         teams: "Pogoń Grod. Mazowiecki vs KS Łódź",
         prediction: "Both Teams to Score",
         odds: "1.99",
-        status: "pending"
+        status: "lost"
     },
     {
         league: "Norway - Eliteserien",
@@ -343,7 +343,7 @@ const gameData = {
         teams: "FSC Mariupol vs Bukovyna ",
         prediction: "Away Win",
         odds: "1.83",
-        status: "pending"
+        status: "won"
     },
     {
         league: "Armenia - Premier League",
@@ -351,7 +351,7 @@ const gameData = {
         teams: "BKMA vs Ararat-Armenia",
         prediction: "Away Win",
         odds: "1.37",
-        status: "pending"
+        status: "lost"
     },
     {
         league: "Poland - 1. Liga",
@@ -359,7 +359,7 @@ const gameData = {
         teams: "Zaglebie Lubin vs Arka Gdynia",
         prediction: "BTTS",
         odds: "1.80",
-        status: "pending"
+        status: "won"
     },
     {
         league: "Denmark - Superliga",
@@ -367,7 +367,7 @@ const gameData = {
         teams: "FC Midtjylland vs Randers FC",
         prediction: "Home&Over 1.5 goals",
         odds: "2.04",
-        status: "pending"
+        status: "won"
     },      
         // WON/LOST GAMES AFTER
         {
