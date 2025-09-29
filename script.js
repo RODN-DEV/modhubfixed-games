@@ -269,6 +269,40 @@ const gameData = {
     'btts': [
         // PENDING GAMES FIRST
         {
+        league: "Turkey - First League",
+        time: "Today 15:30",
+        teams: "Keciorengucu vs Pendikspor",
+        prediction: "Both Teams to Score",
+        odds: "1.99",
+        status: "pending"
+    },
+    {
+        league: "Poland - Lower League",
+        time: "Today 16:00",
+        teams: "Pogoń Grod. Mazowiecki vs KS Łódź",
+        prediction: "Both Teams to Score",
+        odds: "1.99",
+        status: "pending"
+    },
+    {
+        league: "Norway - Eliteserien",
+        time: "Today 20:00",
+        teams: "Odd vs Aalesund",
+        prediction: "Both Teams to Score",
+        odds: "1.99",
+        status: "pending"
+    },
+    {
+        league: "Greece - Super League",
+        time: "Today 19:30",
+        teams: "Atromitos vs Larissa",
+        prediction: "Both Teams to Score",
+        odds: "1.99",
+        status: "pending"
+    },
+        
+        // WON/LOST GAMES AFTER
+        {
             league: "Spain - LaLiga",
             time: "yesterday 17:00", 
             teams: "Elche CF vs Celta de Vigo",
@@ -292,7 +326,6 @@ const gameData = {
             odds: "1.65", 
             status: "won"
         },
-        // WON/LOST GAMES AFTER
         {
             league: "Czech Republic - 1. Liga",
             time: "Yesterday",
