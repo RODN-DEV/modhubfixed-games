@@ -7,7 +7,7 @@ const gameData = {
             teams: "Junior Barranquilla vs Deportivo Pasto",
             prediction: "Home Win",
             odds: "1.36",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Liga Nacional",
@@ -15,7 +15,7 @@ const gameData = {
             teams: "Xelaju MC vs Deportivo Malacateco",
             prediction: "Home Win",
             odds: "1.51",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Liga Primera",
@@ -23,7 +23,7 @@ const gameData = {
             teams: "Managua FC vs Club Sport Sebaco",
             prediction: "Home/Away (12)",
             odds: "1.25",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Liga MX",
