@@ -192,21 +192,61 @@ const gameData = {
     ],
     'odd5': [
         // PENDING GAMES FIRST
+            {
+                league: "Turkey - Super League",
+                time: "Today 20:00",
+                teams: "Besiktas vs Kocaelispor",
+                prediction: "Home Win",
+                odds: "1.47",
+                status: "pending"
+            },
+            {
+                league: "Portugal - Primeira Liga",
+                time: "Today 22:00",
+                teams: "Arouca vs Porto",
+                prediction: "Away Win",
+                odds: "1.43",
+                status: "pending"
+            },
+            {
+                league: "Holland - Eerste Divisie",
+                time: "Today 21:00",
+                teams: "ADO Den Haag vs TOP Oss",
+                prediction: "Home Win",
+                odds: "1.25",
+                status: "pending"
+            },
+            {
+                league: "Spain - LaLiga 2",
+                time: "Today 21:30",
+                teams: "Leganes vs Castellon",
+                prediction: "Over 1.5 goals",
+                odds: "1.28",
+                status: "pending"
+            },
+            {
+                league: "Spain - LaLiga",
+                time: "Today 22:00",
+                teams: "Valencia vs Real Oviedo",
+                prediction: "Under 3.5 goals",
+                odds: "1.26",
+                status: "pending"
+            },
         {
             league: "Germany - Bundesliga",
-            time: "Today 18:30", 
+            time: "yesterday 18:30", 
             teams: "FC Koln vs Stuttgart",
             prediction: "Under 3.5 Goals",
             odds: "1.57",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Turkey - Super Lig",
-            time: "Today 20:00",
+            time: "yesterday 20:00",
             teams: "Fenerbahce vs Antalyaspor",
             prediction: "Over 2.5 Goals", 
             odds: "1.53",
-            status: "pending"
+            status: "lost"
         },
         // WON/LOST GAMES AFTER
         {
@@ -230,34 +270,34 @@ const gameData = {
         // PENDING GAMES FIRST
         {
             league: "Spain - LaLiga",
-            time: "Today 17:00", 
+            time: "yesterday 17:00", 
             teams: "Elche CF vs Celta de Vigo",
             prediction: "Both Teams to Score",
             odds: "1.85",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Scotland - Premiership",
-            time: "Today 18:00",
+            time: "yesterday 18:00",
             teams: "Livingston vs Rangers",
             prediction: "Both Teams to Score", 
             odds: "1.75",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Germany - Bundesliga",
-            time: "Today 19:30",
+            time: "yesterday 19:30",
             teams: "Freiburg vs Hoffenheim",
             prediction: "Both Teams to Score",
             odds: "1.65", 
-            status: "pending"
+            status: "won"
         },
         // WON/LOST GAMES AFTER
         {
             league: "Czech Republic - 1. Liga",
             time: "Yesterday",
             teams: "Jablonec vs Mladá Boleslav",
-            prediction: "Both Teams to Score",
+            prediction: "Both Teams to Score No",
             odds: "1.70",
             status: "won"
         }
