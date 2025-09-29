@@ -42,6 +42,22 @@ const gameData = {
             status: "pending"
         },
         {
+            league: "Liga MX",
+            time: "Today 07:05",
+            teams: "Club Tijuana vs Cruz Azul",
+            prediction: "Away",
+            odds: "2.08",
+            status: "pending"
+        },
+        {
+            league: "TFF First League",
+            time: "Today 15:30",
+            teams: "Keciorengucu vs Pendikspor",
+            prediction: "Home /Away",
+            odds: "1.34",
+            status: "pending"
+        },
+        {
             league: "Categoria Primera A",
             time: "Today 05:30",
             teams: "Junior Barranquilla vs Deportivo Pasto",
@@ -64,22 +80,6 @@ const gameData = {
             prediction: "Home/Away (12)",
             odds: "1.25",
             status: "won"
-        },
-        {
-            league: "Liga MX",
-            time: "Today 07:05",
-            teams: "Club Tijuana vs Cruz Azul",
-            prediction: "Away",
-            odds: "2.08",
-            status: "pending"
-        },
-        {
-            league: "TFF First League",
-            time: "Today 15:30",
-            teams: "Keciorengucu vs Pendikspor",
-            prediction: "Home /Away",
-            odds: "1.34",
-            status: "pending"
         },
         {
             league: "Slovakia - 2. Liga",
