@@ -1,6 +1,46 @@
 // Game Data - Organized with pending first, then won/lost
 const gameData = {
     free: [
+         {
+            league: "Norway - 3. Division",
+            time: "Today 12:00",
+            teams: "Stabæk II vs Sarpsborg 08 II",
+            prediction: "Over 2.5 goals",
+            odds: "1.33",
+            status: "pending"
+        },
+        {
+            league: "Portugal - Primeira Liga",
+            time: "Today 19:00",
+            teams: "Arouca vs FC Porto",
+            prediction: "Away Win",
+            odds: "1.33",
+            status: "pending"
+        },
+        {
+            league: "Bolivia - Primeira División",
+            time: "Today 19:00",
+            teams: "The Strongest vs Oriente Petrolero",
+            prediction: "Home Win",
+            odds: "1.30",
+            status: "pending"
+        },
+        {
+            league: "Uzbekistan - Super League",
+            time: "Today 14:00",
+            teams: "Dinamo Samarqand vs Shortan",
+            prediction: "Home Win",
+            odds: "1.38",
+            status: "pending"
+        },
+        {
+            league: "Turkey - Süper Lig",
+            time: "Today 17:00",
+            teams: "Besiktas vs Kocaelispor",
+            prediction: "Home Win",
+            odds: "1.40",
+            status: "pending"
+        },
         {
             league: "Categoria Primera A",
             time: "Today 05:30",
