@@ -104,42 +104,58 @@ const gameData = {
             prediction: "Home/Away (12)",
             odds: "1.25",
             status: "won"
-        },
-        {
-            league: "Slovakia - 2. Liga",
-            time: "Today 12:30",
-            teams: "MSK Zilina B vs Tatran Liptovsky M.",
-            prediction: "Both teams to score",
-            odds: "1.76",
-            status: "lost"
-        },
-        {
-            league: "Austria - Regionalliga", 
-            time: "Today 12:30",
-            teams: "Kapfenberg vs First Vienna FC",
-            prediction: "Over 2.5 goals",
-            odds: "2.35",
-            status: "won"
-        },
-        {
-            league: "Poland - 1. Liga",
-            time: "Today 14:00",
-            teams: "Miedz Legnica vs Znicz Pruszków",
-            prediction: "Home Win",
-            odds: "1.63",
-            status: "won"
-        },
-        {
-            league: "Italy - Serie C",
-            time: "Today 14:30", 
-            teams: "Potenza vs Atalanta U23",
-            prediction: "Both teams to score",
-            odds: "2.24",
-            status: "lost"
         }
     ],
     'high-odds': [
         // PENDING GAMES FIRST
+        {
+    league: "Norway - 3. Division",
+    time: "Today 16:30",
+    teams: "Lillestrøm II vs Elverum",
+    prediction: "Over 2.5 goals",
+    odds: "1.22",
+    status: "pending"
+},
+{
+    league: "England - Championship",
+    time: "Today 18:45",
+    teams: "Birmingham vs Sheffield Wednesday",
+    prediction: "Home Win",
+    odds: "1.42",
+    status: "pending"
+},
+{
+    league: "England - League One",
+    time: "Today 18:45",
+    teams: "Cardiff vs Burton Albion",
+    prediction: "Home Win",
+    odds: "1.40",
+    status: "pending"
+},
+{
+    league: "USA - MLS",
+    time: "Today 23:30",
+    teams: "Inter Miami vs Chicago Fire",
+    prediction: "Over 2.5 goals",
+    odds: "1.36",
+    status: "pending"
+},
+{
+    league: "UEFA Champions League",
+    time: "Today 19:00",
+    teams: "Pafos vs Bayern München",
+    prediction: "Over 2.5 goals",
+    odds: "1.33",
+    status: "pending"
+},
+{
+    league: "UEFA Champions League",
+    time: "Today 19:00",
+    teams: "Inter Milan vs Slavia Praha",
+    prediction: "Home Win",
+    odds: "1.33",
+    status: "pending"
+    },
             {
                 league: "Finland - Veikkausiliga",
                 time: "Today 20:00",
@@ -292,6 +308,30 @@ const gameData = {
     ],
     'btts': [
         // PENDING GAMES FIRST
+        {
+    league: "AFC Champions League",
+    time: "Today 21:15",
+    teams: "Al-Ittihad FC vs Al-Ahli",
+    prediction: "Over 2.5 goals",
+    odds: "1.50",
+    status: "pending"
+},
+{
+    league: "Turkey - Super League",
+    time: "Today 22:00",
+    teams: "Galatasaray vs Liverpool",
+    prediction: "Away Win",
+    odds: "1.70",
+    status: "pending"
+},
+{
+    league: "UEFA Champions League",
+    time: "Today 22:00",
+    teams: "Inter Milan vs Slavia Praha",
+    prediction: "Home Win",
+    odds: "1.38",
+    status: "pending"
+},
         {
         league: "Turkey - First League",
         time: "Today 15:30",
