@@ -340,7 +340,38 @@ const gameData = {
     ],
     'btts': [
         // PENDING GAMES FIRST
-       
+       {
+    league: "UEFA Champions League",
+    time: "Today 22:00",
+    teams: "Atletico Madrid vs Eintracht Frankfurt",
+    prediction: "Both Teams to Score",
+    odds: "1.66",
+    status: "pending"
+},
+{
+    league: "UEFA Champions League",
+    time: "Today 22:00",
+    teams: "Chelsea vs Benfica",
+    prediction: "Both Teams to Score",
+    odds: "1.73",
+    status: "pending"
+},
+{
+    league: "UEFA Champions League",
+    time: "Today 22:00",
+    teams: "Marseille vs Ajax",
+    prediction: "Both Teams to Score",
+    odds: "1.74",
+    status: "pending"
+},
+{
+    league: "UEFA Champions League",
+    time: "Today 22:00",
+    teams: "Bodo/Glimt vs Tottenham Hotspur",
+    prediction: "Both Teams to Score",
+    odds: "1.55",
+    status: "pending"
+},
         {
         league: "Turkey - First League",
         time: "Today 15:30",
