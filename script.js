@@ -20,7 +20,7 @@ const gameData = {
 {
     league: "Germany - Lower League",
     time: "Today 21:00",
-    teams: "Alemannia Aachen va Erzgb",
+    teams: "Alemannia Aachen va Erzgebirge",
     prediction: "Home/Away (12)",
     odds: "1.25",
     status: "pending"
