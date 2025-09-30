@@ -1,6 +1,30 @@
 // Game Data - Organized with pending first, then won/lost
 const gameData = {
     free: [
+        {
+    league: "Peru - Liga 1",
+    time: "Today 22:45",
+    teams: "Sport Huancayo",
+    prediction: "Home Win",
+    odds: "1.61",
+    status: "pending"
+},
+{
+    league: "England - National League",
+    time: "Today 22:45",
+    teams: "Solihull Moors vs Woking",
+    prediction: "Home/Away (12)",
+    odds: "1.27",
+    status: "pending"
+},
+{
+    league: "Germany - Lower League",
+    time: "Today 21:00",
+    teams: "Alemannia Aachen",
+    prediction: "Home/Away (12)",
+    odds: "1.25",
+    status: "pending"
+},
          {
             league: "Norway - 3. Division",
             time: "Today 12:00",
@@ -23,7 +47,7 @@ const gameData = {
             teams: "The Strongest vs Oriente Petrolero",
             prediction: "Home Win",
             odds: "1.30",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Uzbekistan - Super League",
