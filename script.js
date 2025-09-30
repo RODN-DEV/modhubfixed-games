@@ -15,7 +15,7 @@ const gameData = {
             teams: "Arouca vs FC Porto",
             prediction: "Away Win",
             odds: "1.33",
-            status: "pending"
+            status: "won"
         },
         {
             league: "Bolivia - Primeira División",
@@ -206,7 +206,7 @@ const gameData = {
                 teams: "Arouca vs Porto",
                 prediction: "Away Win",
                 odds: "1.43",
-                status: "pending"
+                status: "won"
             },
             {
                 league: "Holland - Eerste Divisie",
@@ -222,7 +222,7 @@ const gameData = {
                 teams: "Leganes vs Castellon",
                 prediction: "Over 1.5 goals",
                 odds: "1.28",
-                status: "pending"
+                status: "lost"
             },
             {
                 league: "Spain - LaLiga",
