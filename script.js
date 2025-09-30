@@ -4,7 +4,7 @@ const gameData = {
         {
     league: "Peru - Liga 1",
     time: "Today 22:45",
-    teams: "Sport Huancayo",
+    teams: "Sport Huancayo vs Alianza U",
     prediction: "Home Win",
     odds: "1.61",
     status: "pending"
@@ -20,7 +20,7 @@ const gameData = {
 {
     league: "Germany - Lower League",
     time: "Today 21:00",
-    teams: "Alemannia Aachen",
+    teams: "Alemannia Aachen va Erzgb",
     prediction: "Home/Away (12)",
     odds: "1.25",
     status: "pending"
