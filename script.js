@@ -2,12 +2,28 @@
 const gameData = {
     free: [
         {
+    league: "UEFA Champions League",
+    time: "Today 22:00",
+    teams: "Barcelona vs PSG",
+    prediction: "Over 2.5 goals",
+    odds: "1.45",
+    status: "pending"
+},
+{
+    league: "UEFA Champions League",
+    time: "Today 22:00",
+    teams: "Arsenal vs Olympiacos",
+    prediction: "Over 2.5 goals",
+    odds: "1.50",
+    status: "pending"
+},
+        {
     league: "Peru - Liga 1",
     time: "Today 22:45",
     teams: "Sport Huancayo vs Alianza U",
     prediction: "Home Win",
     odds: "1.61",
-    status: "wom"
+    status: "won"
 },
 {
     league: "England - National League",
@@ -301,6 +317,38 @@ const gameData = {
     ],
     'btts': [
         // PENDING GAMES FIRST
+        {
+    league: "Germany - 3. Liga",
+    time: "Today 17:00",
+    teams: "Verl vs FC Ingolstadt 04",
+    prediction: "Both Teams to Score",
+    odds: "1.44",
+    status: "pending"
+},
+{
+    league: "Tunisia - Ligue 1",
+    time: "Today 14:00",
+    teams: "AS Marsa vs ES Tunis",
+    prediction: "Both Teams Not to Score",
+    odds: "1.48",
+    status: "pending"
+},
+{
+    league: "Tunisia - Ligue 1",
+    time: "Today 14:00",
+    teams: "CS Sfaxien vs US Monastirienne",
+    prediction: "Both Teams Not to Score",
+    odds: "1.50",
+    status: "pending"
+},
+{
+    league: "UEFA Champions League",
+    time: "Today 19:00",
+    teams: "Bayer Leverkusen vs PSV Eindhoven",
+    prediction: "Both Teams to Score",
+    odds: "1.57",
+    status: "pending"
+    },
        {
     league: "UEFA Champions League",
     time: "Today 22:00",
@@ -371,6 +419,54 @@ const gameData = {
     ],
     'max-elite': [
         // PENDING GAMES FIRST
+        {
+    league: "AFC Cup",
+    time: "Today 18:15",
+    teams: "Al Zawra'a vs Al-Naser",
+    prediction: "Away Win",
+    odds: "1.33",
+    status: "pending"
+},
+{
+    league: "Morocco - Botola Pro",
+    time: "Today 17:00",
+    teams: "FAR Rabat vs Ittihad Tanger",
+    prediction: "Home Win",
+    odds: "1.33",
+    status: "pending"
+},
+{
+    league: "Morocco - Botola Pro",
+    time: "Today 19:00",
+    teams: "Renaissance Berkane vs Yacoub El Mansour",
+    prediction: "Home Win",
+    odds: "1.33",
+    status: "pending"
+},
+{
+    league: "Tanzania - Ligi kuu Bara",
+    time: "Today 13:00",
+    teams: "Simba vs Namungo",
+    prediction: "Home Win",
+    odds: "1.22",
+    status: "pending"
+},
+{
+    league: "Luxembourg - National Division",
+    time: "Today 18:00",
+    teams: "UNA Strassen vs UN Kaerjeng 97",
+    prediction: "Home Win",
+    odds: "1.25",
+    status: "pending"
+},
+{
+    league: "Luxembourg - National Division",
+    time: "Today 18:00",
+    teams: "Progress Niederkorn vs US Hostert",
+    prediction: "Home Win",
+    odds: "1.25",
+    status: "pending"
+    },
                 {
     league: "AFC Champions League",
     time: "Today 21:15",
