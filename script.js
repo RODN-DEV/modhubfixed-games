@@ -61,6 +61,54 @@ const gameData = {
     'high-odds': [
         // PENDING GAMES FIRST
         {
+    league: "Tunisia - Ligue Professionnelle 1",
+    time: "Today 18:00",
+    teams: "AS La Marsa vs Esperance de Tunis",
+    prediction: "Away Win",
+    odds: "1.60",
+    status: "pending"
+},
+{
+    league: "Montenegro - Piva Liga",
+    time: "Today 18:00",
+    teams: "Mladost Donja Gorica vs Decic Tuzi",
+    prediction: "Home/Away (12)",
+    odds: "1.28",
+    status: "pending"
+},
+{
+    league: "Morocco - Botola",
+    time: "Today 19:00",
+    teams: "OCS Safi vs HUSA Agadir",
+    prediction: "Home/draw",
+    odds: "1.42",
+    status: "pending"
+},
+{
+    league: "Germany - 3. Liga",
+    time: "Today 21:00",
+    teams: "Munchen 1860 vs Viktoria Koln",
+    prediction: "Home Win",
+    odds: "1.64",
+    status: "pending"
+},
+{
+    league: "Luxembourg - National Division",
+    time: "Today 22:00",
+    teams: "Jeunesse Esch vs Differdange FC",
+    prediction: "Away Win",
+    odds: "1.33",
+    status: "pending"
+},
+{
+    league: "England - National League",
+    time: "Today 22:45",
+    teams: "York City vs Scunthorpe",
+    prediction: "Home Win",
+    odds: "1.48",
+    status: "pending"
+    }
+        {
     league: "Norway - 3. Division",
     time: "Today 16:30",
     teams: "Lillestrøm II vs Elverum",
