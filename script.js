@@ -40,70 +40,6 @@ const gameData = {
             prediction: "Away Win",
             odds: "1.33",
             status: "won"
-        },
-        {
-            league: "Bolivia - Primeira División",
-            time: "Today 19:00",
-            teams: "The Strongest vs Oriente Petrolero",
-            prediction: "Home Win",
-            odds: "1.30",
-            status: "won"
-        },
-        {
-            league: "Uzbekistan - Super League",
-            time: "Today 14:00",
-            teams: "Dinamo Samarqand vs Shortan",
-            prediction: "Home Win",
-            odds: "1.38",
-            status: "won"
-        },
-        {
-            league: "Turkey - Süper Lig",
-            time: "Today 17:00",
-            teams: "Besiktas vs Kocaelispor",
-            prediction: "Home Win",
-            odds: "1.40",
-            status: "won"
-        },
-        {
-            league: "Liga MX",
-            time: "Today 07:05",
-            teams: "Club Tijuana vs Cruz Azul",
-            prediction: "Away",
-            odds: "2.08",
-            status: "lost"
-        },
-        {
-            league: "TFF First League",
-            time: "Today 15:30",
-            teams: "Keciorengucu vs Pendikspor",
-            prediction: "Home /Away",
-            odds: "1.34",
-            status: "lost"
-        },
-        {
-            league: "Categoria Primera A",
-            time: "Today 05:30",
-            teams: "Junior Barranquilla vs Deportivo Pasto",
-            prediction: "Home Win",
-            odds: "1.36",
-            status: "won"
-        },
-        {
-            league: "Liga Nacional",
-            time: "Today 06:00",
-            teams: "Xelaju MC vs Deportivo Malacateco",
-            prediction: "Home Win",
-            odds: "1.51",
-            status: "won"
-        },
-        {
-            league: "Liga Primera",
-            time: "Today 06:00",
-            teams: "Managua FC vs Club Sport Sebaco",
-            prediction: "Home/Away (12)",
-            odds: "1.25",
-            status: "won"
         }
     ],
     'high-odds': [
@@ -114,7 +50,7 @@ const gameData = {
     teams: "Lillestrøm II vs Elverum",
     prediction: "Over 2.5 goals",
     odds: "1.22",
-    status: "pending"
+    status: "won"
 },
 {
     league: "England - Championship",
@@ -122,7 +58,7 @@ const gameData = {
     teams: "Birmingham vs Sheffield Wednesday",
     prediction: "Home Win",
     odds: "1.42",
-    status: "pending"
+    status: "lost"
 },
 {
     league: "England - League One",
@@ -130,7 +66,7 @@ const gameData = {
     teams: "Cardiff vs Burton Albion",
     prediction: "Home Win",
     odds: "1.40",
-    status: "pending"
+    status: "lost"
 },
 {
     league: "USA - MLS",
@@ -138,7 +74,7 @@ const gameData = {
     teams: "Inter Miami vs Chicago Fire",
     prediction: "Over 2.5 goals",
     odds: "1.36",
-    status: "pending"
+    status: "won"
 },
 {
     league: "UEFA Champions League",
@@ -146,7 +82,7 @@ const gameData = {
     teams: "Pafos vs Bayern München",
     prediction: "Over 2.5 goals",
     odds: "1.33",
-    status: "pending"
+    status: "won"
 },
 {
     league: "UEFA Champions League",
@@ -154,32 +90,9 @@ const gameData = {
     teams: "Inter Milan vs Slavia Praha",
     prediction: "Home Win",
     odds: "1.33",
-    status: "pending"
+    status: "won"
     },
-            {
-                league: "Finland - Veikkausiliga",
-                time: "Today 20:00",
-                teams: "HJK Helsinki",
-                prediction: "Over 2.5 goals",
-                odds: "1.40",
-                status: "won"
-            },
-            {
-                league: "Sweden - Allsvenskan",
-                time: "Today 20:00",
-                teams: "Djurgårdens",
-                prediction: "under 3.5 goals",
-                odds: "1.45",
-                status: "lost"
-            },
-            {
-                league: "Norway - 1st Division",
-                time: "Today 20:00",
-                teams: "Moss vs Lillestrom",
-                prediction: "Away Win",
-                odds: "1.40",
-                status: "won"
-            },
+            
             {
                 league: "Iceland - Urvalsdelid",
                 time: "Today 22:15",
@@ -238,7 +151,7 @@ const gameData = {
     teams: "Pafos FC vs Bayern Munich",
     prediction: "Away Win",
     odds: "1.53",
-    status: "pending"
+    status: "won"
 },
 {
     league: "UEFA Champions League",
@@ -246,7 +159,7 @@ const gameData = {
     teams: "Inter Milan vs Slavia Prague",
     prediction: "Home Win",
     odds: "1.43",
-    status: "pending"
+    status: "won"
 },
 {
     league: "England - Championship",
@@ -254,7 +167,7 @@ const gameData = {
     teams: "Middlesbrough vs Stoke City",
     prediction: "Home Win",
     odds: "1.42",
-    status: "pending"
+    status: "lost"
 },
 {
     league: "Spain - La Liga",
@@ -262,7 +175,7 @@ const gameData = {
     teams: "Valencia vs Real Oviedo",
     prediction: "Home Win",
     odds: "1.40",
-    status: "pending"
+    status: "lost"
 },
 {
     league: "England - Championship",
@@ -270,7 +183,7 @@ const gameData = {
     teams: "Leicester City vs Wrexham",
     prediction: "Home Win",
     odds: "1.55",
-    status: "pending"
+    status: "lost"
 },
             {
                 league: "Turkey - Super League",
@@ -346,7 +259,7 @@ const gameData = {
     teams: "Atletico Madrid vs Eintracht Frankfurt",
     prediction: "Both Teams to Score",
     odds: "1.66",
-    status: "pending"
+    status: "won"
 },
 {
     league: "UEFA Champions League",
@@ -354,7 +267,7 @@ const gameData = {
     teams: "Chelsea vs Benfica",
     prediction: "Both Teams to Score",
     odds: "1.73",
-    status: "pending"
+    status: "lost"
 },
 {
     league: "UEFA Champions League",
@@ -362,7 +275,7 @@ const gameData = {
     teams: "Marseille vs Ajax",
     prediction: "Both Teams to Score",
     odds: "1.74",
-    status: "pending"
+    status: "lost"
 },
 {
     league: "UEFA Champions League",
@@ -370,40 +283,9 @@ const gameData = {
     teams: "Bodo/Glimt vs Tottenham Hotspur",
     prediction: "Both Teams to Score",
     odds: "1.55",
-    status: "pending"
+    status: "won"
 },
-        {
-        league: "Turkey - First League",
-        time: "Today 15:30",
-        teams: "Keciorengucu vs Pendikspor",
-        prediction: "Both Teams to Score",
-        odds: "1.99",
-        status: "lost"
-    },
-    {
-        league: "Poland - Lower League",
-        time: "Today 16:00",
-        teams: "Pogoń Grod. Mazowiecki vs KS Łódź",
-        prediction: "Both Teams to Score",
-        odds: "1.99",
-        status: "lost"
-    },
-    {
-        league: "Norway - Eliteserien",
-        time: "Today 20:00",
-        teams: "Odd vs Aalesund",
-        prediction: "Both Teams to Score",
-        odds: "1.99",
-        status: "lost"
-    },
-    {
-        league: "Greece - Super League",
-        time: "Today 19:30",
-        teams: "Atromitos vs Larissa",
-        prediction: "Both Teams to Score",
-        odds: "1.99",
-        status: "won"
-    },
+        
         
         // WON/LOST GAMES AFTER
         {
@@ -447,7 +329,7 @@ const gameData = {
     teams: "Al-Ittihad FC vs Al-Ahli",
     prediction: "Over 2.5 goals",
     odds: "1.50",
-    status: "pending"
+    status: "lost"
 },
 {
     league: "Turkey - Super League",
@@ -455,15 +337,15 @@ const gameData = {
     teams: "Galatasaray vs Liverpool",
     prediction: "Away Win",
     odds: "1.70",
-    status: "pending"
+    status: "lost"
 },
 {
     league: "UEFA Champions League",
     time: "Today 22:00",
     teams: "Inter Milan vs Slavia Praha",
     prediction: "Home Win",
-    odds: "1.38",
-    status: "pending"
+    odds: "1.78",
+    status: "won"
 },
         {
         league: "Ukraine - Lower League",
