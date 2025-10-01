@@ -146,6 +146,54 @@ const gameData = {
     'odd5': [
         // PENDING GAMES FIRST
         {
+    league: "AFC Champions League",
+    time: "Today 10:00",
+    teams: "Vissel Kobe vs Melbourne City",
+    prediction: "Over 1.5 goals",
+    odds: "1.25",
+    status: "pending"
+},
+{
+    league: "AFC Champions League",
+    time: "Today 12:15",
+    teams: "Shanghai Shenhua vs Ulsan Hyundai FC",
+    prediction: "Over 1.5 goals",
+    odds: "1.22",
+    status: "pending"
+},
+{
+    league: "AFC Cup",
+    time: "Today 10:00",
+    teams: "Home United vs Selangor",
+    prediction: "Over 1.5 goals",
+    odds: "1.18",
+    status: "pending"
+},
+{
+    league: "AFC Cup",
+    time: "Today 12:15",
+    teams: "Bangkok United vs Persib Bandung",
+    prediction: "Over 1.5 goals",
+    odds: "1.20",
+    status: "pending"
+},
+{
+    league: "AFC Cup",
+    time: "Today 13:45",
+    teams: "Istiglol vs Goa",
+    prediction: "Over 1.5 goals",
+    odds: "1.30",
+    status: "pending"
+},
+{
+    league: "Bolivia - Copa de la División Profesional",
+    time: "Today 19:00",
+    teams: "San Antonio Bulo Bulo vs Bolívar",
+    prediction: "Over 1.5 goals",
+    odds: "1.18",
+    status: "pending"
+        },
+        {
     league: "UEFA Champions League",
     time: "Today 21:00",
     teams: "Pafos FC vs Bayern Munich",
