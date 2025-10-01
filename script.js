@@ -7,7 +7,7 @@ const gameData = {
     teams: "Sport Huancayo vs Alianza U",
     prediction: "Home Win",
     odds: "1.61",
-    status: "pending"
+    status: "wom"
 },
 {
     league: "England - National League",
@@ -15,7 +15,7 @@ const gameData = {
     teams: "Solihull Moors vs Woking",
     prediction: "Home/Away (12)",
     odds: "1.27",
-    status: "pending"
+    status: "won"
 },
 {
     league: "Germany - Lower League",
@@ -23,7 +23,7 @@ const gameData = {
     teams: "Alemannia Aachen va Erzgebirge",
     prediction: "Home/Away (12)",
     odds: "1.25",
-    status: "pending"
+    status: "won"
 },
          {
             league: "Norway - 3. Division",
